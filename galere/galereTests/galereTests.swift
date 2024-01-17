@@ -1,14 +1,14 @@
 //
-//  galere_yTests.swift
-//  galere-yTests
+//  galereTests.swift
+//  galereTests
 //
-//  Created by Jamie Brannan on 18/11/2022.
+//  Created by Jamie Brannan on 17/01/2024.
 //
 
 import XCTest
-@testable import galere_y
+@testable import galere
 
-final class galere_yTests: XCTestCase {
+final class galereTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

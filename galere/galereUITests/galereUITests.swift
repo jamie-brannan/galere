@@ -1,13 +1,13 @@
 //
-//  galere_yUITests.swift
-//  galere-yUITests
+//  galereUITests.swift
+//  galereUITests
 //
-//  Created by Jamie Brannan on 18/11/2022.
+//  Created by Jamie Brannan on 17/01/2024.
 //
 
 import XCTest
 
-final class galere_yUITests: XCTestCase {
+final class galereUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

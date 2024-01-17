@@ -1,14 +1,14 @@
 //
-//  galere_yApp.swift
-//  galere-y
+//  galereApp.swift
+//  galere
 //
-//  Created by Jamie Brannan on 18/11/2022.
+//  Created by Jamie Brannan on 17/01/2024.
 //
 
 import SwiftUI
 
 @main
-struct galere_yApp: App {
+struct galereApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -1,13 +1,13 @@
 //
-//  galere_yUITestsLaunchTests.swift
-//  galere-yUITests
+//  galereUITestsLaunchTests.swift
+//  galereUITests
 //
-//  Created by Jamie Brannan on 18/11/2022.
+//  Created by Jamie Brannan on 17/01/2024.
 //
 
 import XCTest
 
-final class galere_yUITestsLaunchTests: XCTestCase {
+final class galereUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
