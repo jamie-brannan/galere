@@ -12,6 +12,7 @@ struct GalereApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            .border(Color.cyan)
         }
     }
 }
