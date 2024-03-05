@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  galere-y
+//  galere
 //
 //  Created by Jamie Brannan on 18/11/2022.
 //
@@ -13,7 +13,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, Galère!")
         }
         .padding()
     }
