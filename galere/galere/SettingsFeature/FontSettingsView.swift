@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// The display of and presentation of options that are editable to create a coherent ergonomic and personalized text view.
 struct FontSettingsView: View {
     var body: some View {
       VStack(alignment: .leading, spacing: 16) {
@@ -16,11 +17,14 @@ struct FontSettingsView: View {
         
         
       }
+      // TODO: Add a save button in the navbar
+      // QUESTION : What should I do for saving settings like font and beyond? Preloaded selectable parings then user defaults right?
       .navigationTitle("Font Settings")
       .navigationBarTitleDisplayMode(.large)
     }
 }
 
+/// The editable text area view that provides a neutral preview of uniquely the fonts
 struct PairingDisplayView: View {
   @State var displaySample = "Display"
   @State var bodySample = "Body"
