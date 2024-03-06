@@ -15,6 +15,7 @@
 		113A43EE2B581C9800A2EEB4 /* galereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43ED2B581C9800A2EEB4 /* galereUITests.swift */; };
 		113A43F02B581C9800A2EEB4 /* galereUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43EF2B581C9800A2EEB4 /* galereUITestsLaunchTests.swift */; };
 		117140B62B979DDC00D46FB5 /* FontSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117140B52B979DDC00D46FB5 /* FontSettingsView.swift */; };
+		117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		113A43ED2B581C9800A2EEB4 /* galereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galereUITests.swift; sourceTree = "<group>"; };
 		113A43EF2B581C9800A2EEB4 /* galereUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galereUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		117140B52B979DDC00D46FB5 /* FontSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSettingsView.swift; sourceTree = "<group>"; };
+		117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldDescriptorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		113A43D12B581C9600A2EEB4 /* galere */ = {
 			isa = PBXGroup;
 			children = (
+				117140B72B97A39F00D46FB5 /* Common */,
 				113A43D22B581C9600A2EEB4 /* galereApp.swift */,
 				113A43D42B581C9600A2EEB4 /* ContentView.swift */,
 				117140B42B979DBA00D46FB5 /* SettingsFeature */,
@@ -136,6 +139,14 @@
 				117140B52B979DDC00D46FB5 /* FontSettingsView.swift */,
 			);
 			path = SettingsFeature;
+			sourceTree = "<group>";
+		};
+		117140B72B97A39F00D46FB5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 			files = (
 				113A43D52B581C9600A2EEB4 /* ContentView.swift in Sources */,
 				117140B62B979DDC00D46FB5 /* FontSettingsView.swift in Sources */,
+				117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */,
 				113A43D32B581C9600A2EEB4 /* galereApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
