@@ -28,26 +28,43 @@ struct FontSettingsView: View {
 
         // MARK: - Fields
         VStack(alignment: .leading, spacing: 24) {
-          
+
           Text("Headers")
             .font(.title2)
-          
-          FieldDescriptorView(
-            description: "Chose an Apple Text Style",
-            field: {
-              Text("placeholder for selector field")
-            }
-          )
-          
+            .bold()
+
           FieldDescriptorView(
             description: "Pick font file",
             field: {
               Text("placeholder for selector field")
             }
           )
-          
+
+          FieldDescriptorView(
+            description: "Chose an Apple Text Style",
+            field: {
+              Text("placeholder for selector field")
+            }
+          )
+          Divider()
+
           Text("Body")
             .font(.title2)
+            .bold()
+
+          FieldDescriptorView(
+            description: "Pick font file",
+            field: {
+              Text("placeholder for selector field")
+            }
+          )
+
+          FieldDescriptorView(description: "Apple Text Style", field: {
+            Text("""
+This is fixed by default to Apple's `.body` text. For more information consult Apple's Human Interface Guidelines and Apple technical documentation. \n\nAdditionally, there's the possibility to adjust your system base font size settings by going to the `System` app >
+""")
+            // TODO: Add info plus bubble about the system config
+          })
         }
         .padding()
         Spacer()
@@ -89,6 +106,7 @@ struct PairingDisplayView: View {
     .overlay(
       RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
         .strokeBorder()
+        .foregroundColor(.cyan)
     )
     .padding()
   }
