@@ -8,6 +8,11 @@
 import SwiftUI
 
 /// The display of and presentation of options that are editable to create a coherent ergonomic and personalized text view.
+///  - Parameters:
+///    - displayStyle: Range of Font.TextStyle that Apple makes that complements the default body style
+
+///  - Returns: An interactive control center for font calibration while remaining coherent with Dynamic Type standards
+///
 struct FontSettingsView: View {
     var body: some View {
       VStack(alignment: .leading, spacing: 16) {
