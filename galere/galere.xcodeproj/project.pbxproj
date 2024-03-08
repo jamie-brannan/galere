@@ -17,6 +17,33 @@
 		117140B62B979DDC00D46FB5 /* FontSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117140B52B979DDC00D46FB5 /* FontSettingsView.swift */; };
 		117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */; };
 		1190AA762B98B3580016E55D /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190AA752B98B3580016E55D /* FontExtensions.swift */; };
+		11DB1ECA2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
+		11DB1ECB2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
+		11DB1ECC2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
+		11DB1ED52B9B340700DD2A75 /* Ojuju-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECD2B9B340700DD2A75 /* Ojuju-VariableFont_wght.ttf */; };
+		11DB1ED62B9B340700DD2A75 /* Ojuju-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECD2B9B340700DD2A75 /* Ojuju-VariableFont_wght.ttf */; };
+		11DB1ED72B9B340700DD2A75 /* Ojuju-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECD2B9B340700DD2A75 /* Ojuju-VariableFont_wght.ttf */; };
+		11DB1ED82B9B340700DD2A75 /* JosefinSlab-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECE2B9B340700DD2A75 /* JosefinSlab-Italic-VariableFont_wght.ttf */; };
+		11DB1ED92B9B340700DD2A75 /* JosefinSlab-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECE2B9B340700DD2A75 /* JosefinSlab-Italic-VariableFont_wght.ttf */; };
+		11DB1EDA2B9B340700DD2A75 /* JosefinSlab-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECE2B9B340700DD2A75 /* JosefinSlab-Italic-VariableFont_wght.ttf */; };
+		11DB1EDB2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */; };
+		11DB1EDC2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */; };
+		11DB1EDD2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */; };
+		11DB1EDE2B9B340700DD2A75 /* Workbench-Regular-VariableFont_BLED,SCAN.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED02B9B340700DD2A75 /* Workbench-Regular-VariableFont_BLED,SCAN.ttf */; };
+		11DB1EDF2B9B340700DD2A75 /* Workbench-Regular-VariableFont_BLED,SCAN.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED02B9B340700DD2A75 /* Workbench-Regular-VariableFont_BLED,SCAN.ttf */; };
+		11DB1EE02B9B340700DD2A75 /* Workbench-Regular-VariableFont_BLED,SCAN.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED02B9B340700DD2A75 /* Workbench-Regular-VariableFont_BLED,SCAN.ttf */; };
+		11DB1EE12B9B340700DD2A75 /* PixelifySans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED12B9B340700DD2A75 /* PixelifySans-VariableFont_wght.ttf */; };
+		11DB1EE22B9B340700DD2A75 /* PixelifySans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED12B9B340700DD2A75 /* PixelifySans-VariableFont_wght.ttf */; };
+		11DB1EE32B9B340700DD2A75 /* PixelifySans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED12B9B340700DD2A75 /* PixelifySans-VariableFont_wght.ttf */; };
+		11DB1EE42B9B340700DD2A75 /* JosefinSlab-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED22B9B340700DD2A75 /* JosefinSlab-VariableFont_wght.ttf */; };
+		11DB1EE52B9B340700DD2A75 /* JosefinSlab-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED22B9B340700DD2A75 /* JosefinSlab-VariableFont_wght.ttf */; };
+		11DB1EE62B9B340700DD2A75 /* JosefinSlab-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED22B9B340700DD2A75 /* JosefinSlab-VariableFont_wght.ttf */; };
+		11DB1EE72B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */; };
+		11DB1EE82B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */; };
+		11DB1EE92B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */; };
+		11DB1EEA2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */; };
+		11DB1EEB2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */; };
+		11DB1EEC2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +77,16 @@
 		117140B52B979DDC00D46FB5 /* FontSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSettingsView.swift; sourceTree = "<group>"; };
 		117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldDescriptorView.swift; sourceTree = "<group>"; };
 		1190AA752B98B3580016E55D /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chewy-Regular.ttf"; sourceTree = "<group>"; };
+		11DB1ECD2B9B340700DD2A75 /* Ojuju-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ojuju-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		11DB1ECE2B9B340700DD2A75 /* JosefinSlab-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSlab-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PirataOne-Regular.ttf"; sourceTree = "<group>"; };
+		11DB1ED02B9B340700DD2A75 /* Workbench-Regular-VariableFont_BLED,SCAN.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Workbench-Regular-VariableFont_BLED,SCAN.ttf"; sourceTree = "<group>"; };
+		11DB1ED12B9B340700DD2A75 /* PixelifySans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelifySans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		11DB1ED22B9B340700DD2A75 /* JosefinSlab-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSlab-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Micro5-Regular.ttf"; sourceTree = "<group>"; };
+		11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JacquardaBastarda9-Regular.ttf"; sourceTree = "<group>"; };
+		11DB1EF12B9B35E400DD2A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +137,14 @@
 		113A43D12B581C9600A2EEB4 /* galere */ = {
 			isa = PBXGroup;
 			children = (
-				1190AA742B98B3460016E55D /* Extensions */,
+				11DB1EF12B9B35E400DD2A75 /* Info.plist */,
 				113A43D22B581C9600A2EEB4 /* galereApp.swift */,
 				113A43D42B581C9600A2EEB4 /* ContentView.swift */,
 				117140B72B97A39F00D46FB5 /* Common */,
+				1190AA742B98B3460016E55D /* Extensions */,
 				117140B42B979DBA00D46FB5 /* SettingsFeature */,
 				113A43D62B581C9800A2EEB4 /* Assets.xcassets */,
+				11DB1EC82B9B336100DD2A75 /* Resources */,
 				113A43D82B581C9800A2EEB4 /* Preview Content */,
 			);
 			path = galere;
@@ -158,6 +197,22 @@
 				1190AA752B98B3580016E55D /* FontExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11DB1EC82B9B336100DD2A75 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */,
+				11DB1ECE2B9B340700DD2A75 /* JosefinSlab-Italic-VariableFont_wght.ttf */,
+				11DB1ED22B9B340700DD2A75 /* JosefinSlab-VariableFont_wght.ttf */,
+				11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */,
+				11DB1ECD2B9B340700DD2A75 /* Ojuju-VariableFont_wght.ttf */,
+				11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */,
+				11DB1ED12B9B340700DD2A75 /* PixelifySans-VariableFont_wght.ttf */,
+				11DB1ED02B9B340700DD2A75 /* Workbench-Regular-VariableFont_BLED,SCAN.ttf */,
+				11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +320,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DB1EE12B9B340700DD2A75 /* PixelifySans-VariableFont_wght.ttf in Resources */,
+				11DB1EDE2B9B340700DD2A75 /* Workbench-Regular-VariableFont_BLED,SCAN.ttf in Resources */,
+				11DB1ED82B9B340700DD2A75 /* JosefinSlab-Italic-VariableFont_wght.ttf in Resources */,
+				11DB1ECA2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */,
+				11DB1EE72B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */,
+				11DB1EE42B9B340700DD2A75 /* JosefinSlab-VariableFont_wght.ttf in Resources */,
 				113A43DA2B581C9800A2EEB4 /* Preview Assets.xcassets in Resources */,
+				11DB1EEA2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */,
+				11DB1EDB2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */,
 				113A43D72B581C9800A2EEB4 /* Assets.xcassets in Resources */,
+				11DB1ED52B9B340700DD2A75 /* Ojuju-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +338,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DB1ECB2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */,
+				11DB1EDF2B9B340700DD2A75 /* Workbench-Regular-VariableFont_BLED,SCAN.ttf in Resources */,
+				11DB1EE22B9B340700DD2A75 /* PixelifySans-VariableFont_wght.ttf in Resources */,
+				11DB1ED62B9B340700DD2A75 /* Ojuju-VariableFont_wght.ttf in Resources */,
+				11DB1EE82B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */,
+				11DB1ED92B9B340700DD2A75 /* JosefinSlab-Italic-VariableFont_wght.ttf in Resources */,
+				11DB1EE52B9B340700DD2A75 /* JosefinSlab-VariableFont_wght.ttf in Resources */,
+				11DB1EEB2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */,
+				11DB1EDC2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +354,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DB1ECC2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */,
+				11DB1EE02B9B340700DD2A75 /* Workbench-Regular-VariableFont_BLED,SCAN.ttf in Resources */,
+				11DB1EE32B9B340700DD2A75 /* PixelifySans-VariableFont_wght.ttf in Resources */,
+				11DB1ED72B9B340700DD2A75 /* Ojuju-VariableFont_wght.ttf in Resources */,
+				11DB1EE92B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */,
+				11DB1EDA2B9B340700DD2A75 /* JosefinSlab-Italic-VariableFont_wght.ttf in Resources */,
+				11DB1EE62B9B340700DD2A75 /* JosefinSlab-VariableFont_wght.ttf in Resources */,
+				11DB1EEC2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */,
+				11DB1EDD2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +567,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = galere/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Galère";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -516,6 +599,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = galere/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Galère";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

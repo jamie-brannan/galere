@@ -7,6 +7,17 @@
 
 import SwiftUI
 
+// MARK: - Custom Fonts
+
+public extension Font {
+  static func jacquardaB(size: CGFloat?, relativeTo style: Font.TextStyle) -> Font {
+    return Font.custom("JacquardaBastarda9-Regular", size: size ?? 16, relativeTo: style)
+  }
+}
+
+// MARK: - Other
+
+// FIXME: - Needed or not?
 extension Font.TextStyle {
   var rawValue: String {
     switch self {
