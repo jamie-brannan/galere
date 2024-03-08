@@ -14,8 +14,15 @@ import SwiftUI
 ///  - Returns: An interactive control center for font calibration while remaining coherent with Dynamic Type standards
 ///
 struct FontSettingsView: View {
-  @State var displayStyle: Font = .title
-  
+  @State var displayStyle: Font = .caption
+  let tempStyles: [Font] = [
+    .body,
+    .callout,
+    .headline,
+    .subheadline,
+    .title,
+    .largeTitle
+  ]
     var body: some View {
       VStack(alignment: .leading, spacing: 16) {
 
@@ -44,7 +51,18 @@ struct FontSettingsView: View {
             FieldDescriptorView(
               description: "Chose an Apple Text Style",
               field: {
-                Text("placeholder for selector field")
+                ScrollView(.horizontal) {
+                  HStack(alignment: .center) {
+                    ForEach(tempStyles, id: \.self) { style in
+                      Button(action: {
+                        displayStyle = style
+                      }) {
+                        Text("trying")
+                          .font(style)
+                      }
+                    }
+                  }
+                }
               }
             )
             Divider()
