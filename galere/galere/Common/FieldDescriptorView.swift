@@ -22,7 +22,6 @@ struct FieldDescriptorView<Content: View>: View {
         }
         field
       }
-      .frame(width: .infinity)
     }
 }
 
