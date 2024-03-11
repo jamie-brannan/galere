@@ -10,10 +10,33 @@ import SwiftUI
 // MARK: - Custom Fonts
 
 public extension Font {
-  static func jacquardaB(size: CGFloat?, relativeTo style: Font.TextStyle) -> Font {
-    return Font.custom("JacquardaBastarda9-Regular", size: size ?? 16, relativeTo: style)
+
+  enum CustomFonts: String, CaseIterable {
+    case chewy = "Chewy-Regular"
+    case jacquarda = "JacquardaBastarda9-Regular"
+    case josefin = "JosefinSlab-VariableFont_wght"
+    case micro = "Micro5-Regular"
+    case ojuju = "Ojuju-VariableFont_wght"
+    case pirata = "PirataOne-Regular"
+    case pixelify = "PixelifySans-VariableFont_wght"
+    case workbench = "Workbench-Regular-VariableFont_BLED,SCAN"
+  }
+
+  static func addedFonts(_ customFont: CustomFonts, size: CGFloat?, relativeTo style: Font.TextStyle) -> Font {
+    return Font.custom(customFont.rawValue, size: size ?? 16, relativeTo: style)
   }
 }
+
+#Preview {
+  VStack(alignment: .leading) {
+    ForEach(Font.CustomFonts.allCases, id: \.self) { sample in
+      Text(sample.rawValue)
+        .font(.addedFonts(sample, size: 16, relativeTo: .body))
+        .padding()
+    }
+  }
+}
+
 
 // MARK: - Other
 
