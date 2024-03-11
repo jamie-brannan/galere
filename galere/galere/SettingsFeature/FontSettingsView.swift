@@ -37,6 +37,7 @@ struct FontSettingsView: View {
           VStack(alignment: .leading, spacing: 24) {
 
             Text("Headers")
+              .font(.title2)
               .bold()
 
             FieldDescriptorView(
