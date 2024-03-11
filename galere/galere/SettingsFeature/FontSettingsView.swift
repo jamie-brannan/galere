@@ -14,22 +14,21 @@ import SwiftUI
 ///  - Returns: An interactive control center for font calibration while remaining coherent with Dynamic Type standards
 ///
 struct FontSettingsView: View {
-  @State var displayStyle: Font = .caption
-  let tempStyles: [Font] = [
-    .body,
-    .callout,
-    .headline,
-    .subheadline,
-    .title,
-    .largeTitle
-  ]
+  @State var displayStyle: Font.TextStyle = .title
+  @State var fontSelection: Font.CustomFonts = .jacquarda
+  @State var sizeSelection: CGFloat = 12
+  @State var isEditing = false
+
     var body: some View {
       VStack(alignment: .leading, spacing: 16) {
 
         // MARK: - Editable Preview
         PairingDisplayView(
-          displayStyle: $displayStyle
+          displayStyle: displayStyle,
+          fontSelection: $fontSelection,
+          sizeSelection: $sizeSelection
         )
+        .padding()
 
         Divider()
 
@@ -38,30 +37,45 @@ struct FontSettingsView: View {
           VStack(alignment: .leading, spacing: 24) {
 
             Text("Headers")
-              .font(.title2)
               .bold()
 
             FieldDescriptorView(
               description: "Pick font file",
               field: {
-                Text("placeholder for selector field")
+                Picker("fontSelection", selection: $fontSelection) {
+                  ForEach(Font.CustomFonts.allCases, id: \.self) { font in
+                    Text(font.rawValue).tag(font)
+                  }
+                }.pickerStyle(.wheel)
               }
             )
 
+            // TODO: Figure this out later
+//            FieldDescriptorView(
+//              description: "Chose an Apple Text Style",
+//              field: {
+//                Picker("displayStyle", selection: $displayStyle) {
+//                  ForEach(Font.TextStyle.allCases, id: \.self.rawValue) { appleTextStyle in
+//                    Text(appleTextStyle.rawValue).tag(appleTextStyle)
+//                  }
+//                }.pickerStyle(.menu)
+//              }
+//            )
+//            Divider()
+            
             FieldDescriptorView(
-              description: "Chose an Apple Text Style",
+              description: "Relative size",
               field: {
-                ScrollView(.horizontal) {
-                  HStack(alignment: .center) {
-                    ForEach(tempStyles, id: \.self) { style in
-                      Button(action: {
-                        displayStyle = style
-                      }) {
-                        Text("trying")
-                          .font(style)
-                      }
+                VStack {
+                  // TODO: Change color on slider activation
+                  Slider(
+                    value: $sizeSelection,
+                    in: 12...96,
+                    onEditingChanged: { editing in
+                      isEditing = editing
                     }
-                  }
+                  )
+                  Text("\(sizeSelection)")
                 }
               }
             )
@@ -103,7 +117,13 @@ struct FontSettingsView: View {
 
 /// The editable text area view that provides a neutral preview of uniquely the fonts
 struct PairingDisplayView: View {
-  @Binding var displayStyle: Font
+  var displayStyle: Font.TextStyle
+  @Binding var fontSelection: Font.CustomFonts
+  @Binding var sizeSelection: CGFloat
+
+  var font: Font {
+    .addedFonts(fontSelection, size: sizeSelection, relativeTo: displayStyle)
+  }
   @State var displaySample = "Display"
   @State var bodySample = "Body"
   
@@ -114,7 +134,7 @@ struct PairingDisplayView: View {
           "display",
           text: $displaySample
         )
-        .font(displayStyle)
+        .font(font)
         TextField(
           "body",
           text: $bodySample
@@ -129,11 +149,6 @@ struct PairingDisplayView: View {
         .foregroundColor(.cyan)
     )
     .padding()
+    
   }
-}
-
-#Preview {
-  PairingDisplayView(
-    displayStyle: .constant(.largeTitle)
-  )
 }
