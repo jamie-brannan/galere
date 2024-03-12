@@ -41,13 +41,20 @@ struct FontSettingsView: View {
               .bold()
 
             FieldDescriptorView(
-              description: "Pick font file",
+              description: "Pick font file that'll be visible in all your titles",
               field: {
                 Picker("fontSelection", selection: $fontSelection) {
                   ForEach(Font.CustomFonts.allCases, id: \.self) { font in
                     Text(font.rawValue).tag(font)
                   }
-                }.pickerStyle(.wheel)
+                }
+                .pickerStyle(.wheel)
+                .padding()
+                .overlay(
+                  RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
+                    .strokeBorder()
+                    .foregroundColor(.gray)
+                )
               }
             )
 
@@ -65,7 +72,7 @@ struct FontSettingsView: View {
 //            Divider()
             
             FieldDescriptorView(
-              description: "Relative size",
+              description: "Set your relative size for the font, DynamicType's `.title` will handle the rest",
               field: {
                 VStack {
                   // TODO: Change color on slider activation
@@ -78,6 +85,12 @@ struct FontSettingsView: View {
                   )
                   Text("\(sizeSelection)")
                 }
+                .padding()
+                .overlay(
+                  RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
+                    .strokeBorder()
+                    .foregroundColor(.gray)
+                )
               }
             )
             Divider()
@@ -102,6 +115,7 @@ struct FontSettingsView: View {
           }
           .padding()
         }
+
         Spacer()
       }
       // TODO: Add a save button in the navbar
