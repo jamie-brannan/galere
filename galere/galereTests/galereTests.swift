@@ -5,8 +5,8 @@
 //  Created by Jamie Brannan on 17/01/2024.
 //
 
-import XCTest
 @testable import galere
+import XCTest
 
 final class GalereTests: XCTestCase {
 
