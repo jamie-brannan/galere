@@ -137,6 +137,7 @@
 				113A43CB2B581C9600A2EEB4 /* Sources */,
 				113A43CC2B581C9600A2EEB4 /* Frameworks */,
 				113A43CD2B581C9600A2EEB4 /* Resources */,
+				113E7E6D2BA1DCBC003A1F33 /* Linting with SwiftLint Homebrew */,
 			);
 			buildRules = (
 			);
@@ -251,6 +252,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		113E7E6D2BA1DCBC003A1F33 /* Linting with SwiftLint Homebrew */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Linting with SwiftLint Homebrew";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		113A43CB2B581C9600A2EEB4 /* Sources */ = {
@@ -424,6 +447,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"galere/Preview Content\"";
 				DEVELOPMENT_TEAM = 77Q9X4JZHN;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Galère";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -454,6 +478,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"galere/Preview Content\"";
 				DEVELOPMENT_TEAM = 77Q9X4JZHN;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Galère";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

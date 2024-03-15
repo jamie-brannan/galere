@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct galereApp: App {
+struct GalereApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
