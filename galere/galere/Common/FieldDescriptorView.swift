@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// TODO: Add documentation
 struct FieldDescriptorView<Content: View>: View {
   var description: String
   var fieldAlignment: HorizontalAlignment = .leading
@@ -30,5 +31,10 @@ struct FieldDescriptorView<Content: View>: View {
 }
 
 #Preview {
-  FieldDescriptorView(description: "cool will happen again again again again again again again again again again again again again again", field: { Text("What could we put here eh?") } )
+  FieldDescriptorView(
+    description: "cool will happen again again again again again again again again again again again again again again",
+    field: { 
+      Text("What could we put here eh?")
+    }
+  )
 }

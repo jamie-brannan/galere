@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+  @ObservedObject var settingsStore: SettingsStore
+
+  init(settingsStore: SettingsStore) {
+    self.settingsStore = settingsStore
+  }
+
   var body: some View {
     NavigationView {
       VStack {
@@ -17,7 +23,7 @@ struct ContentView: View {
         Text("Hello, Galère!")
       }
       .toolbar {
-        NavigationLink(destination: FontSettingsView()) {
+        NavigationLink(destination: FontSettingsView(settingsStore: settingsStore)) {
           Text("Temporary Settings")
         }
       }
@@ -28,6 +34,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    ContentView(settingsStore: SettingsStore())
   }
 }

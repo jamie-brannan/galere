@@ -14,12 +14,16 @@ import SwiftUI
 ///  - Returns: An interactive control center for font calibration while remaining coherent with Dynamic Type standards
 ///
 struct FontSettingsView: View {
+  @ObservedObject var settingsStore: SettingsStore
+
   @State var displayStyle: Font.TextStyle = .title
   @State var fontSelection: Font.CustomFonts = .jacquarda
   @State var sizeSelection: CGFloat = 12
   @State var isEditing = false
 
-    var body: some View {
+  init(settingsStore: SettingsStore) { self.settingsStore = settingsStore }
+
+  var body: some View {
       VStack(alignment: .leading, spacing: 16) {
 
         // MARK: - Editable Preview
@@ -109,11 +113,15 @@ struct FontSettingsView: View {
       // ? : - What should I do for saving settings like font and beyond? Preloaded selectable parings then user defaults right?
       .navigationTitle("Font Settings")
       .navigationBarTitleDisplayMode(.large)
+      .onAppear(perform: {
+        fontSelection = settingsStore.settings.font
+      })
     }
 }
+
 #Preview {
   NavigationView {
-    FontSettingsView()
+    FontSettingsView(settingsStore: SettingsStore())
   }
 }
 
@@ -128,7 +136,7 @@ struct PairingDisplayView: View {
   }
   @State var displaySample = "Display"
   @State var bodySample = "Body"
-  
+
   var body: some View {
     VStack(alignment: .leading) {
       Group {

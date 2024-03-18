@@ -11,8 +11,7 @@ import SwiftUI
 struct GalereApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-            .border(Color.cyan)
+            ContentView(settingsStore: SettingsStore())
         }
     }
 }
