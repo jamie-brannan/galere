@@ -14,12 +14,8 @@ public extension Font {
   enum CustomFonts: String, CaseIterable, Codable {
     case chewy = "Chewy-Regular"
     case jacquarda = "JacquardaBastarda9-Regular"
-//    case josefin = "JosefinSlab-VariableFont_wght"
     case micro = "Micro5-Regular"
-//    case ojuju = "Ojuju-VariableFont_wght"
     case pirata = "PirataOne-Regular"
-//    case pixelify = "PixelifySans-VariableFont_wght"
-//    case workbench = "Workbench-Regular-VariableFont_BLED,SCAN"
   }
 
   static func addedFonts(_ customFont: CustomFonts, size: CGFloat?, relativeTo style: Font.TextStyle) -> Font {
