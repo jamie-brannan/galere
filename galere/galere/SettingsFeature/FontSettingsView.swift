@@ -58,19 +58,6 @@ struct FontSettingsView: View {
               }
             )
 
-            // TODO: Figure this out later
-//            FieldDescriptorView(
-//              description: "Chose an Apple Text Style",
-//              field: {
-//                Picker("displayStyle", selection: $displayStyle) {
-//                  ForEach(Font.TextStyle.allCases, id: \.self.rawValue) { appleTextStyle in
-//                    Text(appleTextStyle.rawValue).tag(appleTextStyle)
-//                  }
-//                }.pickerStyle(.menu)
-//              }
-//            )
-//            Divider()
-            
             FieldDescriptorView(
               description: "Set your relative size for the font, DynamicType's `.title` will handle the rest",
               field: {
