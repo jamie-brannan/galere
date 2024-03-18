@@ -14,8 +14,10 @@
 		113A43E42B581C9800A2EEB4 /* galereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43E32B581C9800A2EEB4 /* galereTests.swift */; };
 		113A43EE2B581C9800A2EEB4 /* galereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43ED2B581C9800A2EEB4 /* galereUITests.swift */; };
 		113A43F02B581C9800A2EEB4 /* galereUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43EF2B581C9800A2EEB4 /* galereUITestsLaunchTests.swift */; };
-		117140B62B979DDC00D46FB5 /* FontSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117140B52B979DDC00D46FB5 /* FontSettingsView.swift */; };
 		117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */; };
+		1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914D2BA8B25C00132382 /* FontSettingsView.swift */; };
+		118CF98C2BA8AC0700096F65 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = 118CF98B2BA8AC0700096F65 /* default.json */; };
+		118CF98F2BA8ADE800096F65 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CF98E2BA8ADE800096F65 /* Settings.swift */; };
 		1190AA762B98B3580016E55D /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190AA752B98B3580016E55D /* FontExtensions.swift */; };
 		11DB1ECA2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
 		11DB1ECB2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
@@ -59,8 +61,10 @@
 		113A43E92B581C9800A2EEB4 /* galereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = galereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		113A43ED2B581C9800A2EEB4 /* galereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galereUITests.swift; sourceTree = "<group>"; };
 		113A43EF2B581C9800A2EEB4 /* galereUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galereUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		117140B52B979DDC00D46FB5 /* FontSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSettingsView.swift; sourceTree = "<group>"; };
 		117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldDescriptorView.swift; sourceTree = "<group>"; };
+		1176914D2BA8B25C00132382 /* FontSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSettingsView.swift; sourceTree = "<group>"; };
+		118CF98B2BA8AC0700096F65 /* default.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
+		118CF98E2BA8ADE800096F65 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1190AA752B98B3580016E55D /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chewy-Regular.ttf"; sourceTree = "<group>"; };
 		11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PirataOne-Regular.ttf"; sourceTree = "<group>"; };
@@ -120,10 +124,11 @@
 				11DB1EF12B9B35E400DD2A75 /* Info.plist */,
 				113A43D22B581C9600A2EEB4 /* galereApp.swift */,
 				113A43D42B581C9600A2EEB4 /* ContentView.swift */,
+				118CF98D2BA8AD6100096F65 /* Models */,
+				1176914C2BA8B25C00132382 /* SettingsFeature */,
+				113A43D62B581C9800A2EEB4 /* Assets.xcassets */,
 				117140B72B97A39F00D46FB5 /* Common */,
 				1190AA742B98B3460016E55D /* Extensions */,
-				117140B42B979DBA00D46FB5 /* SettingsFeature */,
-				113A43D62B581C9800A2EEB4 /* Assets.xcassets */,
 				11DB1EC82B9B336100DD2A75 /* Resources */,
 				113A43D82B581C9800A2EEB4 /* Preview Content */,
 			);
@@ -155,20 +160,28 @@
 			path = galereUITests;
 			sourceTree = "<group>";
 		};
-		117140B42B979DBA00D46FB5 /* SettingsFeature */ = {
-			isa = PBXGroup;
-			children = (
-				117140B52B979DDC00D46FB5 /* FontSettingsView.swift */,
-			);
-			path = SettingsFeature;
-			sourceTree = "<group>";
-		};
 		117140B72B97A39F00D46FB5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		1176914C2BA8B25C00132382 /* SettingsFeature */ = {
+			isa = PBXGroup;
+			children = (
+				1176914D2BA8B25C00132382 /* FontSettingsView.swift */,
+			);
+			path = SettingsFeature;
+			sourceTree = "<group>";
+		};
+		118CF98D2BA8AD6100096F65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				118CF98E2BA8ADE800096F65 /* Settings.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		1190AA742B98B3460016E55D /* Extensions */ = {
@@ -186,6 +199,7 @@
 				11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */,
 				11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */,
 				11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */,
+				118CF98B2BA8AC0700096F65 /* default.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -297,6 +311,7 @@
 			files = (
 				11DB1ECA2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */,
 				11DB1EE72B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */,
+				118CF98C2BA8AC0700096F65 /* default.json in Resources */,
 				113A43DA2B581C9800A2EEB4 /* Preview Assets.xcassets in Resources */,
 				11DB1EEA2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */,
 				11DB1EDB2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */,
@@ -356,9 +371,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				113A43D52B581C9600A2EEB4 /* ContentView.swift in Sources */,
-				117140B62B979DDC00D46FB5 /* FontSettingsView.swift in Sources */,
+				118CF98F2BA8ADE800096F65 /* Settings.swift in Sources */,
 				1190AA762B98B3580016E55D /* FontExtensions.swift in Sources */,
 				117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */,
+				1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */,
 				113A43D32B581C9600A2EEB4 /* galereApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

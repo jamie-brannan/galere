@@ -11,7 +11,7 @@ import SwiftUI
 
 public extension Font {
 
-  enum CustomFonts: String, CaseIterable {
+  enum CustomFonts: String, CaseIterable, Codable {
     case chewy = "Chewy-Regular"
     case jacquarda = "JacquardaBastarda9-Regular"
 //    case josefin = "JosefinSlab-VariableFont_wght"
