@@ -15,7 +15,7 @@ struct FieldDescriptorView<Content: View>: View {
 
     var body: some View {
       VStack(alignment: fieldAlignment, spacing: 8) {
-        HStack{
+        HStack {
           Spacer()
           Text(description)
             .font(.caption)
