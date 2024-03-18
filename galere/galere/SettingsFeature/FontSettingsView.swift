@@ -115,6 +115,7 @@ struct FontSettingsView: View {
       .navigationBarTitleDisplayMode(.large)
       .onAppear(perform: {
         fontSelection = settingsStore.settings.font
+        sizeSelection = settingsStore.settings.size
       })
     }
 }
@@ -134,6 +135,7 @@ struct PairingDisplayView: View {
   var font: Font {
     .addedFonts(fontSelection, size: sizeSelection, relativeTo: displayStyle)
   }
+
   @State var displaySample = "Display"
   @State var bodySample = "Body"
 

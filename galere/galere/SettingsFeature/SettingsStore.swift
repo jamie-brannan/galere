@@ -15,7 +15,7 @@ class SettingsStore: ObservableObject {
 
   init() {
     guard let taskJsonUrl = Bundle.main.url(forResource: "default", withExtension: "json") else {
-      self.settings = Settings(font: .pirata)
+      self.settings = Settings(font: .pirata, size: 14)
       return
     }
 
@@ -30,7 +30,7 @@ class SettingsStore: ObservableObject {
       #if DEBUG
       print("\(error)") // TODO: chose logging/reporting tool
       #endif
-      self.settings = Settings(font: .pirata)
+      self.settings = Settings(font: .pirata, size: 108) // TODO: Something else hardcoded
       return
     }
   }

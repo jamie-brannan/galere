@@ -9,4 +9,5 @@ import SwiftUI
 
 struct Settings: Codable {
   var font: Font.CustomFonts
+  var size: CGFloat
 }
