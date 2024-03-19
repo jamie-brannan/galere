@@ -73,11 +73,12 @@ struct FontSettingsView: View {
                   Slider(
                     value: $sizeSelection,
                     in: 12...96,
+                    step: 1,
                     onEditingChanged: { editing in
                       isEditing = editing
                     }
                   )
-                  Text("\(sizeSelection)")
+                  Text("\(sizeSelection.formatted())")
                 }
                 .padding()
                 .overlay(
