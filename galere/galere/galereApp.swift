@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GalereApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView(settingsStore: SettingsStore())
-        }
+  var body: some Scene {
+    WindowGroup {
+      ZStack {
+        ContentView(settingsStore: SettingsStore())
+        
+      }
     }
+  }
 }
