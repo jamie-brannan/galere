@@ -78,6 +78,9 @@ struct FontSettingsView: View {
                       isEditing = editing
                     }
                   )
+                  .onChange(of: sizeSelection) { selection in
+                    settingsStore.settings.size = selection
+                  }
                   Text("\(sizeSelection.formatted())")
                 }
                 .padding()
