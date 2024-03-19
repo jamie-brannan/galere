@@ -19,24 +19,32 @@ final class LaunchScreenStateManager: ObservableObject, Observable {
 
   @MainActor func dismiss() {
     Task {
-      try? await Task.sleep(for: Duration.seconds(2))
+      try? await Task.sleep(for: Duration.seconds(6))
       self.state = .finish
     }
   }
 }
 
 struct LaunchScreen: View {
+  var titleAnimationDuration: Double { return 1.0 }
+  @State var isJumping = false
+
   var body: some View {
     ZStack {
       Color.green
       VStack {
         Text("Galère")
           .font(.addedFonts(.jacquarda, size: 100, relativeTo: .title))
+          .offset(y: isJumping ? 0 : -80)
+          .animation(.interpolatingSpring(stiffness: 1, damping: 2, initialVelocity: 0.5), value: isJumping)
         Text("We're in the same boat")
           .italic()
+          .offset(y: isJumping ? 0 : +80)
+          .animation(.interpolatingSpring(stiffness: 1, damping: 2, initialVelocity: 0.5), value: isJumping)
       }
       .foregroundStyle(.white)
     }.ignoresSafeArea()
+      .onAppear(perform: { self.isJumping.toggle() })
   }
 }
 
