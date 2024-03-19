@@ -53,6 +53,9 @@ struct FontSettingsView: View {
                   }
                 }
                 .pickerStyle(.wheel)
+                .onChange(of: fontSelection) { selection in
+                  settingsStore.settings.font = selection
+                }
                 .padding()
                 .overlay(
                   RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
