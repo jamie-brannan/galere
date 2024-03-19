@@ -11,7 +11,7 @@ import SwiftUI
 struct GalereApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(settingsStore: SettingsStore())
         }
     }
 }
