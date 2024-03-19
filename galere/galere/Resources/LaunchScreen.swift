@@ -14,7 +14,7 @@ enum LaunchScreenStep {
   case finish
 }
 
-final class LaunchScreenStateManager: ObservableObject, Observable {
+final class LaunchScreenStateManager: ObservableObject {
   @MainActor @Published private(set) var state: LaunchScreenStep = .start
 
   @MainActor func dismiss() {
