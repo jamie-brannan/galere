@@ -19,7 +19,7 @@ final class LaunchScreenStateManager: ObservableObject, Observable {
 
   @MainActor func dismiss() {
     Task {
-      try? await Task.sleep(for: Duration.seconds(1))
+      try? await Task.sleep(for: Duration.seconds(2))
       self.state = .finish
     }
   }
@@ -28,9 +28,14 @@ final class LaunchScreenStateManager: ObservableObject, Observable {
 struct LaunchScreen: View {
   var body: some View {
     ZStack {
-      Color.mint
-      Text("Galère")
-        .font(.addedFonts(.jacquarda, size: 100, relativeTo: .title))
+      Color.green
+      VStack {
+        Text("Galère")
+          .font(.addedFonts(.jacquarda, size: 100, relativeTo: .title))
+        Text("We're in the same boat")
+          .italic()
+      }
+      .foregroundStyle(.white)
     }.ignoresSafeArea()
   }
 }
