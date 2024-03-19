@@ -21,6 +21,7 @@ struct ContentView: View {
           .imageScale(.large)
           .foregroundColor(.accentColor)
         Text("Hello, Galère!")
+          .font(.settingsBased(settingsStore, style: .title))
       }
       .toolbar {
         NavigationLink(destination: FontSettingsView(settingsStore: settingsStore)) {

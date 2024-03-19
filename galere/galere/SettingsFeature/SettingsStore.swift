@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 /// The object from which changes to the global app settings are to be published and subscribed to
-class SettingsStore: ObservableObject {
+public class SettingsStore: ObservableObject {
   let saveUrl = URL(fileURLWithPath: "MySettings", relativeTo: FileManager.documentsDirectoryURL).appendingPathExtension("json")
 
   @Published var settings: Settings {

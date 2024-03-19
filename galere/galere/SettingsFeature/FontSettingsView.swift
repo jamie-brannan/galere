@@ -17,6 +17,7 @@ struct FontSettingsView: View {
   @ObservedObject var settingsStore: SettingsStore
 
   @State var displayStyle: Font.TextStyle = .title
+  // FIXME: these two selection default values are never used, how can I set up the init right for these to never be set and immediately erased?
   @State var fontSelection: Font.CustomFonts = .jacquarda
   @State var sizeSelection: CGFloat = 12
   @State var isEditing = false

@@ -21,6 +21,10 @@ public extension Font {
   static func addedFonts(_ customFont: CustomFonts, size: CGFloat?, relativeTo style: Font.TextStyle) -> Font {
     return Font.custom(customFont.rawValue, size: size ?? 16, relativeTo: style)
   }
+
+  static func settingsBased(_ store: SettingsStore, style: Font.TextStyle) -> Font {
+    return Font.custom(store.settings.font.rawValue, size: store.settings.size, relativeTo: style)
+  }
 }
 
 #Preview {
