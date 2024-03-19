@@ -71,17 +71,26 @@ struct FontSettingsView: View {
                 VStack {
                   // TODO: Change color on slider activation
                   Slider(
-                    value: $sizeSelection,
+                    value: $sizeSelection, 
                     in: 12...96,
                     step: 1,
+                    label: {},
+                    minimumValueLabel: {
+                      Text("12")
+                    },
+                    maximumValueLabel: {
+                      Text("96")
+                    },
                     onEditingChanged: { editing in
                       isEditing = editing
                     }
                   )
+                  .accentColor( isEditing ? .pink : .blue)
                   .onChange(of: sizeSelection) { selection in
                     settingsStore.settings.size = selection
                   }
                   Text("\(sizeSelection.formatted())")
+                    .accentColor( isEditing ? .pink : .primary)
                 }
                 .padding()
                 .overlay(
