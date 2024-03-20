@@ -19,6 +19,7 @@
 		1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914D2BA8B25C00132382 /* FontSettingsView.swift */; };
 		117691502BA8B45100132382 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914F2BA8B45100132382 /* SettingsStore.swift */; };
 		117691522BA8E25E00132382 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117691512BA8E25E00132382 /* FileManagerExtensions.swift */; };
+		11820ED22BAB2709008BAA0F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 11820ED12BAB2709008BAA0F /* Localizable.xcstrings */; };
 		118CF98C2BA8AC0700096F65 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = 118CF98B2BA8AC0700096F65 /* default.json */; };
 		118CF98F2BA8ADE800096F65 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CF98E2BA8ADE800096F65 /* Settings.swift */; };
 		1190AA762B98B3580016E55D /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190AA752B98B3580016E55D /* FontExtensions.swift */; };
@@ -70,6 +71,7 @@
 		1176914D2BA8B25C00132382 /* FontSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSettingsView.swift; sourceTree = "<group>"; };
 		1176914F2BA8B45100132382 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		117691512BA8E25E00132382 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
+		11820ED12BAB2709008BAA0F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		118CF98B2BA8AC0700096F65 /* default.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
 		118CF98E2BA8ADE800096F65 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1190AA752B98B3580016E55D /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */,
 				118CF98B2BA8AC0700096F65 /* default.json */,
 				114AC12C2BA9F220002B2FDC /* LaunchScreen.swift */,
+				11820ED12BAB2709008BAA0F /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 113A43C62B581C9600A2EEB4;
 			productRefGroup = 113A43D02B581C9600A2EEB4 /* Products */;
@@ -331,6 +335,7 @@
 			files = (
 				11DB1ECA2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */,
 				11DB1EE72B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */,
+				11820ED22BAB2709008BAA0F /* Localizable.xcstrings in Resources */,
 				118CF98C2BA8AC0700096F65 /* default.json in Resources */,
 				113A43DA2B581C9800A2EEB4 /* Preview Assets.xcassets in Resources */,
 				11DB1EEA2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */,
@@ -470,6 +475,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -490,6 +496,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -533,6 +540,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -547,6 +555,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -153,8 +153,8 @@ struct PairingDisplayView: View {
     .addedFonts(fontSelection, size: sizeSelection, relativeTo: displayStyle)
   }
 
-  @State var displaySample = "Display"
-  @State var bodySample = "Body"
+  @State var displaySample = "Tap to edit the display"
+  @State var bodySample = "Tap to write a new body"
 
   var body: some View {
     VStack(alignment: .leading) {

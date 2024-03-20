@@ -1,0 +1,65 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@" : {
+
+    },
+    "12" : {
+
+    },
+    "96" : {
+
+    },
+    "body" : {
+
+    },
+    "Body" : {
+
+    },
+    "display" : {
+
+    },
+    "Font Settings" : {
+
+    },
+    "fontSelection" : {
+
+    },
+    "Galère" : {
+
+    },
+    "Headers" : {
+
+    },
+    "Hello, Galère!" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bonjour, galère !"
+          }
+        }
+      }
+    },
+    "placeholder for selector field" : {
+
+    },
+    "Temporary Settings" : {
+
+    },
+    "This is fixed by default to Apple's `.body` text. For more information consult Apple's Human Interface Guidelines and Apple technical documentation. \n\nAdditionally, there's the possibility to adjust your system base font size settings by going to the `System` app >" : {
+
+    },
+    "We're in the same boat" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "On est dans le même bâteau"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
