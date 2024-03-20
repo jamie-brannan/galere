@@ -20,15 +20,15 @@ public class SettingsStore: ObservableObject {
   }
 
   init() {
-    // TODO: check for a `MySettings.json` first before defaulting
+    /// No matter where it's from, we'll be decoding JSON data format
     let decoder = JSONDecoder()
 
     /// See if we already have a saved setting
     guard FileManager.default.fileExists(atPath: saveUrl.path) else {
 
-      /// Or else get the default json setting
+      /// IF NOT, get the default json setting located in the app's bundle
       guard let taskJsonUrl = Bundle.main.url(forResource: "default", withExtension: "json") else {
-        self.settings = Settings(font: .pirata, size: 14)
+        self.settings = Settings(font: .chewy, size: 14)
         return
       }
 
@@ -38,38 +38,25 @@ public class SettingsStore: ObservableObject {
         self.settings = task
         return
       } catch let error {
-        //      #if DEBUG
-        print("\(error)") // TODO: chose logging/reporting tool
-        //      #endif
-        self.settings = Settings(font: .pirata, size: 108) // TODO: Something else hardcoded
+        print(error)
+        self.settings = Settings(font: .chewy, size: 108) // TODO: Something else hardcoded
         return
       }
     }
 
-    /// Decode our saved json
+    /// IF SO, decode our saved json from the users directory of `FileManager`
     do {
       let taskData = try Data(contentsOf: saveUrl)
       let task = try decoder.decode(Settings.self, from: taskData)
       self.settings = task
     } catch let error {
       print(error)
-      self.settings = Settings(font: .pirata, size: 108)
+      self.settings = Settings(font: .chewy, size: 108)
     }
   }
 
-  /// Simply read to see if the user has already saved settings before on this device
-  func isAlreadySaved() -> Bool {
-    let check = FileManager.default.fileExists(atPath: "MySettings.json")
-    return check
-  }
-
-  func loadJson(from url: URL) {
-    
-  }
   /// When the user has expressed their own view of settings (lumped together for now) write into a json file for now
   /// In a fully scaled project, would be stored in a back-end user account of some kind that would write information to a data base
-  // TODO: Mark a way in DocC future path ideas with larger scope and infrastructure
-  // TODO: Seperate encode and writing the encoded json?
   private func saveSettingsToDisk() {
     let encoder = JSONEncoder()
 
