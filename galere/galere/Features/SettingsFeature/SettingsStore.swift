@@ -9,6 +9,7 @@ import Combine
 import Foundation
 import SwiftUI
 
+// TODO: Add unit test for this
 /// The object from which changes to the global app settings are to be published and subscribed to
 public class SettingsStore: ObservableObject {
   let saveUrl = URL(fileURLWithPath: "MySettings", relativeTo: FileManager.documentsDirectoryURL).appendingPathExtension("json")
@@ -39,7 +40,7 @@ public class SettingsStore: ObservableObject {
         return
       } catch let error {
         print(error)
-        self.settings = Settings(font: .chewy, size: 108) // TODO: Something else hardcoded
+        self.settings = Settings(font: .chewy, size: 108)
         return
       }
     }
