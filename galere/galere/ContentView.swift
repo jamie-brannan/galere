@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
   @ObservedObject var settingsStore: SettingsStore
+  @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
 
   init(settingsStore: SettingsStore) {
     self.settingsStore = settingsStore
@@ -29,6 +30,9 @@ struct ContentView: View {
         }
       }
       .padding()
+      .task {
+        self.launchScreenState.dismiss()
+      }
     }
   }
 }
