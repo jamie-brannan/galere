@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## 0.0.1
 
+- 23: Make a changelog and intermediary release procedure
 - 1: Add splash screen
 - 10: Set up custom dynamically scaled fonts
 - 20: Initial Readme
