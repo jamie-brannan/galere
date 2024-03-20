@@ -61,6 +61,6 @@ struct LaunchScreen: View {
   }
 }
 
-#Preview {
+#Preview("Launch Screen Preview") {
   LaunchScreen()
 }

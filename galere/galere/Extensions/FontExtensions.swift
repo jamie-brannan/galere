@@ -42,12 +42,16 @@ public extension Font {
   }
 }
 
-#Preview {
+#Preview("Custom Font Collection Preview") {
   VStack(alignment: .leading) {
-    ForEach(Font.CustomFonts.allCases, id: \.self) { sample in
-      Text(sample.rawValue)
-        .font(.addedFonts(sample, size: 16, relativeTo: .body))
-        .padding()
+    Text("`Font.CustomFont` collection name and their rendering:")
+      .padding()
+    List {
+      ForEach(Font.CustomFonts.allCases, id: \.self) { sample in
+        Text(sample.rawValue)
+          .font(.addedFonts(sample, size: 16, relativeTo: .body))
+          .padding()
+      }
     }
   }
 }
