@@ -28,6 +28,7 @@ struct FontSettingsView: View {
 
   init(settingsStore: SettingsStore) { self.settingsStore = settingsStore }
 
+  // TODO: Extract views to simplify body
   var body: some View {
       VStack(alignment: .leading, spacing: 16) {
 
@@ -81,7 +82,6 @@ struct FontSettingsView: View {
               ),
               field: {
                 VStack {
-                  // TODO: Change color on slider activation
                   Slider(
                     value: $sizeSelection, 
                     in: minimumSize...maximumSize,
@@ -90,7 +90,7 @@ struct FontSettingsView: View {
                     minimumValueLabel: {
                       Text(
                         String(
-                          localized: "\(minimumSize)",
+                          localized: "\(minimumSize.formatted())",
                           comment: "The minimum numerical value for display fonts slider"
                         )
                       )
@@ -98,7 +98,7 @@ struct FontSettingsView: View {
                     maximumValueLabel: {
                       Text(
                         String(
-                          localized: "\(maximumSize)",
+                          localized: "\(maximumSize.formatted())",
                           comment: "The maximumSize numerical value for display fonts slider"
                         )
                       )
@@ -186,6 +186,5 @@ struct PairingDisplayView: View {
         .foregroundColor(.cyan)
     )
     .padding()
-    
   }
 }
