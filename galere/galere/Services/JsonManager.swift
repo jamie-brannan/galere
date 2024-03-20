@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class JsonCodables {
+final class JsonManager {
   /// Singletons
   static let decoder = JSONDecoder()
   static let encoder = JSONEncoder()
@@ -39,6 +39,15 @@ final class JsonCodables {
     } catch let error {
       print(error) // TODO: Avoid in prod
       return nil
+    }
+  }
+
+  static func writeUserDefaultJson<T: Encodable>(inFileNamed name: String, withValues value: T) {
+    do {
+      let taskData = try encoder.encode(value)
+      try taskData.write(to: URL(fileURLWithPath: name, relativeTo: FileManager.documentsDirectoryURL).appendingPathExtension("json"))
+    } catch let error {
+      print(error) // TODO: Avoid in prod
     }
   }
 }

@@ -20,8 +20,7 @@
 		117691502BA8B45100132382 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914F2BA8B45100132382 /* SettingsStore.swift */; };
 		117691522BA8E25E00132382 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117691512BA8E25E00132382 /* FileManagerExtensions.swift */; };
 		11820ED22BAB2709008BAA0F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 11820ED12BAB2709008BAA0F /* Localizable.xcstrings */; };
-		11820ED42BAB2F30008BAA0F /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11820ED32BAB2F30008BAA0F /* SettingsTests.swift */; };
-		11820ED72BAB300D008BAA0F /* JsonCodables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11820ED62BAB300D008BAA0F /* JsonCodables.swift */; };
+		11820ED72BAB300D008BAA0F /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11820ED62BAB300D008BAA0F /* JsonManager.swift */; };
 		118CF98C2BA8AC0700096F65 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = 118CF98B2BA8AC0700096F65 /* default.json */; };
 		118CF98F2BA8ADE800096F65 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CF98E2BA8ADE800096F65 /* Settings.swift */; };
 		1190AA762B98B3580016E55D /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190AA752B98B3580016E55D /* FontExtensions.swift */; };
@@ -74,8 +73,7 @@
 		1176914F2BA8B45100132382 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		117691512BA8E25E00132382 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		11820ED12BAB2709008BAA0F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		11820ED32BAB2F30008BAA0F /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
-		11820ED62BAB300D008BAA0F /* JsonCodables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCodables.swift; sourceTree = "<group>"; };
+		11820ED62BAB300D008BAA0F /* JsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
 		118CF98B2BA8AC0700096F65 /* default.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
 		118CF98E2BA8ADE800096F65 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1190AA752B98B3580016E55D /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				113A43E32B581C9800A2EEB4 /* galereTests.swift */,
-				11820ED32BAB2F30008BAA0F /* SettingsTests.swift */,
 			);
 			path = galereTests;
 			sourceTree = "<group>";
@@ -196,7 +193,7 @@
 		11820ED52BAB2FC8008BAA0F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				11820ED62BAB300D008BAA0F /* JsonCodables.swift */,
+				11820ED62BAB300D008BAA0F /* JsonManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -410,7 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				113A43D52B581C9600A2EEB4 /* HomeLandingView.swift in Sources */,
-				11820ED72BAB300D008BAA0F /* JsonCodables.swift in Sources */,
+				11820ED72BAB300D008BAA0F /* JsonManager.swift in Sources */,
 				118CF98F2BA8ADE800096F65 /* Settings.swift in Sources */,
 				114AC12D2BA9F220002B2FDC /* LaunchScreen.swift in Sources */,
 				11F13FD62BAAF675008641B5 /* Documentation.docc in Sources */,
@@ -427,7 +424,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11820ED42BAB2F30008BAA0F /* SettingsTests.swift in Sources */,
 				113A43E42B581C9800A2EEB4 /* galereTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

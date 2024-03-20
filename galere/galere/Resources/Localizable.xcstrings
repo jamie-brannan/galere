@@ -4,9 +4,6 @@
     "%@" : {
 
     },
-    "%lf" : {
-      "comment" : "The minimum numerical value for display fonts slider"
-    },
     "body" : {
 
     },
