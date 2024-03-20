@@ -15,7 +15,7 @@ struct GalereApp: App {
   var body: some Scene {
     WindowGroup {
       ZStack {
-        ContentView(settingsStore: SettingsStore())
+        HomeLandingView(settingsStore: SettingsStore())
         if launchScreenState.state != .finish {
           LaunchScreen()
         }

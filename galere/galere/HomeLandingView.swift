@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeLandingView.swift
 //  galere
 //
 //  Created by Jamie Brannan on 18/11/2022.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct ContentView: View {
+/// The view that appears after ``LaunchScreen`` and is the central hub for the Galère gallery experience.
+struct HomeLandingView: View {
   @ObservedObject var settingsStore: SettingsStore
   @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
 
@@ -37,8 +38,8 @@ struct ContentView: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeLandingView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView(settingsStore: SettingsStore())
+    HomeLandingView(settingsStore: SettingsStore())
   }
 }

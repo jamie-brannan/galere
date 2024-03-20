@@ -137,7 +137,7 @@ struct FontSettingsView: View {
     }
 }
 
-#Preview {
+#Preview("Font Settings View") {
   NavigationView {
     FontSettingsView(settingsStore: SettingsStore())
   }
