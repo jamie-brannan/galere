@@ -207,14 +207,14 @@
 		11DB1EC82B9B336100DD2A75 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				11820ED12BAB2709008BAA0F /* Localizable.xcstrings */,
 				113A43D62B581C9800A2EEB4 /* Assets.xcassets */,
+				118CF98B2BA8AC0700096F65 /* default.json */,
 				11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */,
 				11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */,
 				11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */,
 				11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */,
-				118CF98B2BA8AC0700096F65 /* default.json */,
 				114AC12C2BA9F220002B2FDC /* LaunchScreen.swift */,
-				11820ED12BAB2709008BAA0F /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

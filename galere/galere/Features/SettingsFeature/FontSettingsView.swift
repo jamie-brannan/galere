@@ -19,7 +19,11 @@ struct FontSettingsView: View {
   @State var displayStyle: Font.TextStyle = .title
   // FIXME: these two selection default values are never used, how can I set up the init right for these to never be set and immediately erased?
   @State var fontSelection: Font.CustomFonts = .jacquarda
+
   @State var sizeSelection: CGFloat = 12
+  let maximumSize: CGFloat = 96
+  let minimumSize: CGFloat = 12
+
   @State var isEditing = false
 
   init(settingsStore: SettingsStore) { self.settingsStore = settingsStore }
@@ -39,48 +43,65 @@ struct FontSettingsView: View {
 
         // MARK: - Fields
         ScrollView(.vertical) {
-          VStack(alignment: .leading, spacing: 24) {
+          VStack(alignment: .leading, spacing: 16) {
 
             Text("Headers")
               .font(.title2)
               .bold()
 
-            FieldDescriptorView(
-              description: "Pick font file that'll be visible in all your titles",
-              field: {
-                Picker("fontSelection", selection: $fontSelection) {
-                  ForEach(Font.CustomFonts.allCases, id: \.self) { font in
-                    Text(font.rawValue).tag(font)
+            VStack(alignment: .leading) {
+              Text(
+                String(localized: "Font Family", comment: "Field name for the font file selector")
+              )
+              FieldDescriptorView(
+                description: "Pick font file that'll be visible in all your titles",
+                field: {
+                  Picker("fontSelection", selection: $fontSelection) {
+                    ForEach(Font.CustomFonts.allCases, id: \.self) { font in
+                      Text(font.rawValue).tag(font)
+                    }
                   }
+                  .onChange(of: fontSelection) { selection in
+                    settingsStore.settings.font = selection
+                  }
+                  .padding()
+                  .overlay(
+                    RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
+                      .strokeBorder()
+                      .foregroundColor(.gray)
+                  )
                 }
-                .pickerStyle(.wheel)
-                .onChange(of: fontSelection) { selection in
-                  settingsStore.settings.font = selection
-                }
-                .padding()
-                .overlay(
-                  RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
-                    .strokeBorder()
-                    .foregroundColor(.gray)
-                )
-              }
-            )
+              )
+            }
 
             FieldDescriptorView(
-              description: "Set your relative size for the font, DynamicType's `.title` will handle the rest",
+              description: String(
+                localized: "Set your relative size for the font, DynamicType's `.title` will handle the rest of scaling changes if you adjust your system settings in the meantime",
+                comment: "Field description for font size"
+              ),
               field: {
                 VStack {
                   // TODO: Change color on slider activation
                   Slider(
                     value: $sizeSelection, 
-                    in: 12...96,
+                    in: minimumSize...maximumSize,
                     step: 1,
                     label: {},
                     minimumValueLabel: {
-                      Text("12")
+                      Text(
+                        String(
+                          localized: "\(minimumSize)",
+                          comment: "The minimum numerical value for display fonts slider"
+                        )
+                      )
                     },
                     maximumValueLabel: {
-                      Text("96")
+                      Text(
+                        String(
+                          localized: "\(maximumSize)",
+                          comment: "The maximumSize numerical value for display fonts slider"
+                        )
+                      )
                     },
                     onEditingChanged: { editing in
                       isEditing = editing
@@ -105,13 +126,10 @@ struct FontSettingsView: View {
 
             Text("Body")
               .font(.title2)
-              .bold() 
-
-            FieldDescriptorView(description: "Apple Text Style", field: {
-              Text("""
-  This is fixed by default to Apple's `.body` text. For more information consult Apple's Human Interface Guidelines and Apple technical documentation. \n\nAdditionally, there's the possibility to adjust your system base font size settings by going to the `System` app >
-  """)
-            })
+              .bold()
+            Text("""
+This is fixed by default to Apple's `.body` text. For more information consult Apple's Human Interface Guidelines and Apple technical documentation. \n\nAdditionally, there's the possibility to adjust your system base font size settings by going to the `System` app >
+""") // TODO: Finish string
           }
           .padding()
         }

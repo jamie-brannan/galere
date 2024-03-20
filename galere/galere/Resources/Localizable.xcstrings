@@ -4,20 +4,27 @@
     "%@" : {
 
     },
-    "12" : {
-
-    },
-    "96" : {
-
+    "%lf" : {
+      "comment" : "The minimum numerical value for display fonts slider"
     },
     "body" : {
 
     },
     "Body" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le corps du text"
+          }
+        }
+      }
     },
     "display" : {
 
+    },
+    "Font Family" : {
+      "comment" : "Field name for the font file selector"
     },
     "Font Settings" : {
 
@@ -29,7 +36,14 @@
 
     },
     "Headers" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les entêtes"
+          }
+        }
+      }
     },
     "Hello, Galère!" : {
       "localizations" : {
@@ -41,10 +55,10 @@
         }
       }
     },
-    "placeholder for selector field" : {
-
+    "Set your relative size for the font, DynamicType's `.title` will handle the rest of scaling changes if you adjust your system settings in the meantime" : {
+      "comment" : "Field description for font size"
     },
-    "Temporary Settings" : {
+    "Settings" : {
 
     },
     "This is fixed by default to Apple's `.body` text. For more information consult Apple's Human Interface Guidelines and Apple technical documentation. \n\nAdditionally, there's the possibility to adjust your system base font size settings by going to the `System` app >" : {

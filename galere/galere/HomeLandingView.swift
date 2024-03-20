@@ -27,7 +27,7 @@ struct HomeLandingView: View {
       }
       .toolbar {
         NavigationLink(destination: FontSettingsView(settingsStore: settingsStore)) {
-          Text("Temporary Settings")
+          Text("Settings")
         }
       }
       .padding()
