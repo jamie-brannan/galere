@@ -105,14 +105,7 @@ struct FontSettingsView: View {
 
             Text("Body")
               .font(.title2)
-              .bold()
-
-            FieldDescriptorView(
-              description: "Pick font file",
-              field: {
-                Text("placeholder for selector field")
-              }
-            )
+              .bold() 
 
             FieldDescriptorView(description: "Apple Text Style", field: {
               Text("""
