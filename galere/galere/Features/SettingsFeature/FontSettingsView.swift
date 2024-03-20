@@ -111,7 +111,6 @@ struct FontSettingsView: View {
               Text("""
   This is fixed by default to Apple's `.body` text. For more information consult Apple's Human Interface Guidelines and Apple technical documentation. \n\nAdditionally, there's the possibility to adjust your system base font size settings by going to the `System` app >
   """)
-              // TODO: Add info plus bubble about the system config
             })
           }
           .padding()
@@ -119,8 +118,6 @@ struct FontSettingsView: View {
 
         Spacer()
       }
-      // TODO: Add a save button in the navbar
-      // ? : - What should I do for saving settings like font and beyond? Preloaded selectable parings then user defaults right?
       .navigationTitle("Font Settings")
       .navigationBarTitleDisplayMode(.large)
       .onAppear(perform: {
