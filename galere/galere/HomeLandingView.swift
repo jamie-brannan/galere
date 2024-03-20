@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// The view that appears after ``LaunchScreen`` and is the central hub for the Galère gallery experience.
 struct HomeLandingView: View {
   @ObservedObject var settingsStore: SettingsStore
   @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
