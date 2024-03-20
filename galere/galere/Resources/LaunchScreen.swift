@@ -16,10 +16,16 @@ enum LaunchScreenStep {
 }
 
 /// This manager will give methods for, and publish updates, across views of the change in animation steps of the screen.
+///
+/// This class is marked with the `final` keyword because we do not want it to be overriden nor subclassed, since we only have one launch screen for the app for now.
+/// > For more about classes as reference types see related official Swift.org documentation: https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/
+///
+/// Therefore we need `@MainActor` on the `state` and for the `dismiss()` that'll mutate the state so that we're sure it stays on the main thread
+///  > For more info  see AvanderLee's blog post about the subject: https://www.avanderlee.com/swift/mainactor-dispatch-main-thread/
 final class LaunchScreenStateManager: ObservableObject {
   @MainActor @Published private(set) var state: LaunchScreenStep = .start
 
-  ///  The `Task` of taking the states through different time durations between the defined ``LaunchScreenStep``s till it's end.
+  ///  The `Task` of taking the states through different time durations between the defined ``LaunchScreenStep``s
   @MainActor func dismiss() {
     Task {
       try? await Task.sleep(for: Duration.seconds(6))
