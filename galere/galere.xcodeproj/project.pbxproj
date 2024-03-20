@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		113A43D32B581C9600A2EEB4 /* galereApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43D22B581C9600A2EEB4 /* galereApp.swift */; };
+		113A43D32B581C9600A2EEB4 /* GalereApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43D22B581C9600A2EEB4 /* GalereApp.swift */; };
 		113A43D52B581C9600A2EEB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43D42B581C9600A2EEB4 /* ContentView.swift */; };
 		113A43D72B581C9800A2EEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113A43D62B581C9800A2EEB4 /* Assets.xcassets */; };
 		113A43DA2B581C9800A2EEB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113A43D92B581C9800A2EEB4 /* Preview Assets.xcassets */; };
@@ -55,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		113A43CF2B581C9600A2EEB4 /* galere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = galere.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		113A43D22B581C9600A2EEB4 /* galereApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galereApp.swift; sourceTree = "<group>"; };
+		113A43D22B581C9600A2EEB4 /* GalereApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalereApp.swift; sourceTree = "<group>"; };
 		113A43D42B581C9600A2EEB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		113A43D62B581C9800A2EEB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		113A43D92B581C9800A2EEB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				11DB1EF12B9B35E400DD2A75 /* Info.plist */,
-				113A43D22B581C9600A2EEB4 /* galereApp.swift */,
+				113A43D22B581C9600A2EEB4 /* GalereApp.swift */,
 				113A43D42B581C9600A2EEB4 /* ContentView.swift */,
 				118CF98D2BA8AD6100096F65 /* Models */,
 				1176914C2BA8B25C00132382 /* SettingsFeature */,
@@ -387,7 +387,7 @@
 				117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */,
 				117691522BA8E25E00132382 /* FileManagerExtensions.swift in Sources */,
 				1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */,
-				113A43D32B581C9600A2EEB4 /* galereApp.swift in Sources */,
+				113A43D32B581C9600A2EEB4 /* GalereApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
