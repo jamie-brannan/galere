@@ -133,7 +133,7 @@
 				113A43D22B581C9600A2EEB4 /* GalereApp.swift */,
 				113A43D42B581C9600A2EEB4 /* ContentView.swift */,
 				118CF98D2BA8AD6100096F65 /* Models */,
-				1176914C2BA8B25C00132382 /* SettingsFeature */,
+				11F13FD72BAAF9A7008641B5 /* Features */,
 				117140B72B97A39F00D46FB5 /* Common */,
 				1190AA742B98B3460016E55D /* Extensions */,
 				11DB1EC82B9B336100DD2A75 /* Resources */,
@@ -214,6 +214,14 @@
 				114AC12C2BA9F220002B2FDC /* LaunchScreen.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		11F13FD72BAAF9A7008641B5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1176914C2BA8B25C00132382 /* SettingsFeature */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
