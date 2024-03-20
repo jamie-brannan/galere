@@ -34,6 +34,7 @@
 		11DB1EEA2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */; };
 		11DB1EEB2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */; };
 		11DB1EEC2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */; };
+		11F13FD62BAAF675008641B5 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 11F13FD52BAAF675008641B5 /* Documentation.docc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Micro5-Regular.ttf"; sourceTree = "<group>"; };
 		11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JacquardaBastarda9-Regular.ttf"; sourceTree = "<group>"; };
 		11DB1EF12B9B35E400DD2A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		11F13FD52BAAF675008641B5 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				1190AA742B98B3460016E55D /* Extensions */,
 				11DB1EC82B9B336100DD2A75 /* Resources */,
 				113A43D82B581C9800A2EEB4 /* Preview Content */,
+				11F13FD52BAAF675008641B5 /* Documentation.docc */,
 			);
 			path = galere;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				113A43D52B581C9600A2EEB4 /* ContentView.swift in Sources */,
 				118CF98F2BA8ADE800096F65 /* Settings.swift in Sources */,
 				114AC12D2BA9F220002B2FDC /* LaunchScreen.swift in Sources */,
+				11F13FD62BAAF675008641B5 /* Documentation.docc in Sources */,
 				1190AA762B98B3580016E55D /* FontExtensions.swift in Sources */,
 				117691502BA8B45100132382 /* SettingsStore.swift in Sources */,
 				117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */,
