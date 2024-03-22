@@ -2,15 +2,17 @@
 
 ⛵️ We're all on the same boat • _On est dans le même bâteau_
 
-:anchor:  **Table of Contents**
-
-- [galere-documentation](#galere-documentation)
-      - [*What is a galere (*galère*)*?\*](#what-is-a-galere-galère)
-      - [*What's this about?*](#whats-this-about)
-  - [Overview](#overview)
-    - [Requirements](#requirements)
-    - [Installation](#installation)
-
+### :anchor:  **Table of Contents**
+- [galere-documentation-unlinked](#galere-documentation-unlinked)
+    - [About](#about)
+  - [:ticket: Version](#ticket-version)
+  - [Getting Started](#getting-started)
+    - [:scroll: Requirements](#scroll-requirements)
+    - [:inbox\_tray: Installation](#inbox_tray-installation)
+  - [:building\_construction: Structure](#building_construction-structure)
+  - [:apple: Submission](#apple-submission)
+  - [:recycle: CI](#recycle-ci)
+  - [:classical\_building: Licence](#classical_building-licence)
 
 ### About
 
