@@ -1,0 +1,76 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@" : {
+
+    },
+    "body" : {
+
+    },
+    "Body" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le corps du text"
+          }
+        }
+      }
+    },
+    "display" : {
+
+    },
+    "Font Family" : {
+      "comment" : "Field name for the font file selector"
+    },
+    "Font Settings" : {
+
+    },
+    "fontSelection" : {
+
+    },
+    "Galère" : {
+
+    },
+    "Headers" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les entêtes"
+          }
+        }
+      }
+    },
+    "Hello, Galère!" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bonjour, galère !"
+          }
+        }
+      }
+    },
+    "Set your relative size for the font, DynamicType's `.title` will handle the rest of scaling changes if you adjust your system settings in the meantime" : {
+      "comment" : "Field description for font size"
+    },
+    "Settings" : {
+
+    },
+    "This is fixed by default to Apple's `.body` text. For more information consult Apple's Human Interface Guidelines and Apple technical documentation. \n\nAdditionally, there's the possibility to adjust your system base font size settings by going to the `System` app >" : {
+
+    },
+    "We're in the same boat" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "On est dans le même bâteau"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

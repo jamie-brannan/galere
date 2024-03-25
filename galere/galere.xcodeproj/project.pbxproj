@@ -7,13 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		113A43D32B581C9600A2EEB4 /* galereApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43D22B581C9600A2EEB4 /* galereApp.swift */; };
-		113A43D52B581C9600A2EEB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43D42B581C9600A2EEB4 /* ContentView.swift */; };
+		113A43D32B581C9600A2EEB4 /* GalereApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43D22B581C9600A2EEB4 /* GalereApp.swift */; };
+		113A43D52B581C9600A2EEB4 /* HomeLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43D42B581C9600A2EEB4 /* HomeLandingView.swift */; };
 		113A43D72B581C9800A2EEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113A43D62B581C9800A2EEB4 /* Assets.xcassets */; };
 		113A43DA2B581C9800A2EEB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113A43D92B581C9800A2EEB4 /* Preview Assets.xcassets */; };
 		113A43E42B581C9800A2EEB4 /* galereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43E32B581C9800A2EEB4 /* galereTests.swift */; };
 		113A43EE2B581C9800A2EEB4 /* galereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43ED2B581C9800A2EEB4 /* galereUITests.swift */; };
 		113A43F02B581C9800A2EEB4 /* galereUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43EF2B581C9800A2EEB4 /* galereUITestsLaunchTests.swift */; };
+		114AC12D2BA9F220002B2FDC /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114AC12C2BA9F220002B2FDC /* LaunchScreen.swift */; };
+		117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */; };
+		1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914D2BA8B25C00132382 /* FontSettingsView.swift */; };
+		117691502BA8B45100132382 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914F2BA8B45100132382 /* SettingsStore.swift */; };
+		117691522BA8E25E00132382 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117691512BA8E25E00132382 /* FileManagerExtensions.swift */; };
+		11820ED22BAB2709008BAA0F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 11820ED12BAB2709008BAA0F /* Localizable.xcstrings */; };
+		11820ED72BAB300D008BAA0F /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11820ED62BAB300D008BAA0F /* JsonManager.swift */; };
+		118CF98C2BA8AC0700096F65 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = 118CF98B2BA8AC0700096F65 /* default.json */; };
+		118CF98F2BA8ADE800096F65 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CF98E2BA8ADE800096F65 /* Settings.swift */; };
+		1190AA762B98B3580016E55D /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190AA752B98B3580016E55D /* FontExtensions.swift */; };
+		11DB1ECA2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
+		11DB1ECB2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
+		11DB1ECC2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
+		11DB1EDB2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */; };
+		11DB1EDC2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */; };
+		11DB1EDD2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */; };
+		11DB1EE72B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */; };
+		11DB1EE82B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */; };
+		11DB1EE92B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */; };
+		11DB1EEA2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */; };
+		11DB1EEB2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */; };
+		11DB1EEC2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */; };
+		11F13FD62BAAF675008641B5 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 11F13FD52BAAF675008641B5 /* Documentation.docc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +58,8 @@
 
 /* Begin PBXFileReference section */
 		113A43CF2B581C9600A2EEB4 /* galere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = galere.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		113A43D22B581C9600A2EEB4 /* galereApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galereApp.swift; sourceTree = "<group>"; };
-		113A43D42B581C9600A2EEB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		113A43D22B581C9600A2EEB4 /* GalereApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalereApp.swift; sourceTree = "<group>"; };
+		113A43D42B581C9600A2EEB4 /* HomeLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLandingView.swift; sourceTree = "<group>"; };
 		113A43D62B581C9800A2EEB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		113A43D92B581C9800A2EEB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		113A43DF2B581C9800A2EEB4 /* galereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = galereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +67,22 @@
 		113A43E92B581C9800A2EEB4 /* galereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = galereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		113A43ED2B581C9800A2EEB4 /* galereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galereUITests.swift; sourceTree = "<group>"; };
 		113A43EF2B581C9800A2EEB4 /* galereUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galereUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		114AC12C2BA9F220002B2FDC /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldDescriptorView.swift; sourceTree = "<group>"; };
+		1176914D2BA8B25C00132382 /* FontSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSettingsView.swift; sourceTree = "<group>"; };
+		1176914F2BA8B45100132382 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		117691512BA8E25E00132382 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
+		11820ED12BAB2709008BAA0F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		11820ED62BAB300D008BAA0F /* JsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
+		118CF98B2BA8AC0700096F65 /* default.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
+		118CF98E2BA8ADE800096F65 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		1190AA752B98B3580016E55D /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chewy-Regular.ttf"; sourceTree = "<group>"; };
+		11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PirataOne-Regular.ttf"; sourceTree = "<group>"; };
+		11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Micro5-Regular.ttf"; sourceTree = "<group>"; };
+		11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JacquardaBastarda9-Regular.ttf"; sourceTree = "<group>"; };
+		11DB1EF12B9B35E400DD2A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		11F13FD52BAAF675008641B5 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +133,17 @@
 		113A43D12B581C9600A2EEB4 /* galere */ = {
 			isa = PBXGroup;
 			children = (
-				113A43D22B581C9600A2EEB4 /* galereApp.swift */,
-				113A43D42B581C9600A2EEB4 /* ContentView.swift */,
-				113A43D62B581C9800A2EEB4 /* Assets.xcassets */,
+				11DB1EF12B9B35E400DD2A75 /* Info.plist */,
+				113A43D22B581C9600A2EEB4 /* GalereApp.swift */,
+				113A43D42B581C9600A2EEB4 /* HomeLandingView.swift */,
+				118CF98D2BA8AD6100096F65 /* Models */,
+				11F13FD72BAAF9A7008641B5 /* Features */,
+				11820ED52BAB2FC8008BAA0F /* Services */,
+				117140B72B97A39F00D46FB5 /* Common */,
+				1190AA742B98B3460016E55D /* Extensions */,
+				11DB1EC82B9B336100DD2A75 /* Resources */,
 				113A43D82B581C9800A2EEB4 /* Preview Content */,
+				11F13FD52BAAF675008641B5 /* Documentation.docc */,
 			);
 			path = galere;
 			sourceTree = "<group>";
@@ -127,6 +173,71 @@
 			path = galereUITests;
 			sourceTree = "<group>";
 		};
+		117140B72B97A39F00D46FB5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1176914C2BA8B25C00132382 /* SettingsFeature */ = {
+			isa = PBXGroup;
+			children = (
+				1176914D2BA8B25C00132382 /* FontSettingsView.swift */,
+				1176914F2BA8B45100132382 /* SettingsStore.swift */,
+			);
+			path = SettingsFeature;
+			sourceTree = "<group>";
+		};
+		11820ED52BAB2FC8008BAA0F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				11820ED62BAB300D008BAA0F /* JsonManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		118CF98D2BA8AD6100096F65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				118CF98E2BA8ADE800096F65 /* Settings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1190AA742B98B3460016E55D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1190AA752B98B3580016E55D /* FontExtensions.swift */,
+				117691512BA8E25E00132382 /* FileManagerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11DB1EC82B9B336100DD2A75 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11820ED12BAB2709008BAA0F /* Localizable.xcstrings */,
+				113A43D62B581C9800A2EEB4 /* Assets.xcassets */,
+				118CF98B2BA8AC0700096F65 /* default.json */,
+				11DB1ED42B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf */,
+				11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */,
+				11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */,
+				11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */,
+				114AC12C2BA9F220002B2FDC /* LaunchScreen.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11F13FD72BAAF9A7008641B5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1176914C2BA8B25C00132382 /* SettingsFeature */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +248,7 @@
 				113A43CB2B581C9600A2EEB4 /* Sources */,
 				113A43CC2B581C9600A2EEB4 /* Frameworks */,
 				113A43CD2B581C9600A2EEB4 /* Resources */,
+				113E7E6D2BA1DCBC003A1F33 /* Linting with SwiftLint Homebrew */,
 			);
 			buildRules = (
 			);
@@ -213,6 +325,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 113A43C62B581C9600A2EEB4;
 			productRefGroup = 113A43D02B581C9600A2EEB4 /* Products */;
@@ -231,7 +344,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DB1ECA2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */,
+				11DB1EE72B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */,
+				11820ED22BAB2709008BAA0F /* Localizable.xcstrings in Resources */,
+				118CF98C2BA8AC0700096F65 /* default.json in Resources */,
 				113A43DA2B581C9800A2EEB4 /* Preview Assets.xcassets in Resources */,
+				11DB1EEA2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */,
+				11DB1EDB2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */,
 				113A43D72B581C9800A2EEB4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +359,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DB1ECB2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */,
+				11DB1EE82B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */,
+				11DB1EEB2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */,
+				11DB1EDC2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,18 +370,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DB1ECC2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */,
+				11DB1EE92B9B340700DD2A75 /* Micro5-Regular.ttf in Resources */,
+				11DB1EEC2B9B340700DD2A75 /* JacquardaBastarda9-Regular.ttf in Resources */,
+				11DB1EDD2B9B340700DD2A75 /* PirataOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		113E7E6D2BA1DCBC003A1F33 /* Linting with SwiftLint Homebrew */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Linting with SwiftLint Homebrew";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		113A43CB2B581C9600A2EEB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113A43D52B581C9600A2EEB4 /* ContentView.swift in Sources */,
-				113A43D32B581C9600A2EEB4 /* galereApp.swift in Sources */,
+				113A43D52B581C9600A2EEB4 /* HomeLandingView.swift in Sources */,
+				11820ED72BAB300D008BAA0F /* JsonManager.swift in Sources */,
+				118CF98F2BA8ADE800096F65 /* Settings.swift in Sources */,
+				114AC12D2BA9F220002B2FDC /* LaunchScreen.swift in Sources */,
+				11F13FD62BAAF675008641B5 /* Documentation.docc in Sources */,
+				1190AA762B98B3580016E55D /* FontExtensions.swift in Sources */,
+				117691502BA8B45100132382 /* SettingsStore.swift in Sources */,
+				117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */,
+				117691522BA8E25E00132382 /* FileManagerExtensions.swift in Sources */,
+				1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */,
+				113A43D32B581C9600A2EEB4 /* GalereApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +487,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -347,8 +506,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -392,6 +552,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -404,8 +565,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -420,11 +582,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1710278906;
 				DEVELOPMENT_ASSET_PATHS = "\"galere/Preview Content\"";
-				DEVELOPMENT_TEAM = 843FCJSS4Z;
+				DEVELOPMENT_TEAM = 77Q9X4JZHN;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = galere/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Galère";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -435,7 +600,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.exemple.galere;
+				PRODUCT_BUNDLE_IDENTIFIER = galere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -449,11 +614,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1710278906;
 				DEVELOPMENT_ASSET_PATHS = "\"galere/Preview Content\"";
-				DEVELOPMENT_TEAM = 843FCJSS4Z;
+				DEVELOPMENT_TEAM = 77Q9X4JZHN;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = galere/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Galère";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -464,7 +632,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.exemple.galere;
+				PRODUCT_BUNDLE_IDENTIFIER = galere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
