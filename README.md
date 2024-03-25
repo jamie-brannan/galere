@@ -3,7 +3,8 @@
 ⛵️ We're all on the same boat • _On est dans le même bâteau_
 
 ### :anchor:  **Table of Contents**
-- [galere-documentation-unlinked](#galere-documentation-unlinked)
+- [Galère, *tack problems down to creative expressions*](#galère-tack-problems-down-to-creative-expressions)
+    - [:anchor:  **Table of Contents**](#anchor--table-of-contents)
     - [About](#about)
   - [:ticket: Version](#ticket-version)
   - [Getting Started](#getting-started)
@@ -34,7 +35,7 @@ Problem solving when collaboratively we think together for [common good](https:/
 
 ## :ticket: Version
 
-The current version is `0.0.0`.
+The current version is `0.0.1`.
 
 To know what changed between versions, please refer to [`CHANGELOG.md`](CHANGELOG.md).
 
@@ -44,7 +45,7 @@ To know what changed between versions, please refer to [`CHANGELOG.md`](CHANGELO
 
 Make sure on your machine you're running 
 
-* Xcode 17
+* Xcode 15
 * iOS 16
 * SwiftLint
 
@@ -82,7 +83,9 @@ All the unit tests are located here
 
 ## :apple: Submission
 
-Currently handled privately
+Currently handled privately.
+
+Releases, see relevant [repository documentation](RELEASE_PROCEDURE.MD)
 
 ## :recycle: CI
 
