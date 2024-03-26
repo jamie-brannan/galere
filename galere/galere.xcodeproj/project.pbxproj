@@ -81,6 +81,9 @@
 		118CF98B2BA8AC0700096F65 /* default.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
 		118CF98E2BA8ADE800096F65 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1190AA752B98B3580016E55D /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		1192B4E52BB337AC00C376DC /* paris.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = paris.gpx; sourceTree = "<group>"; };
+		11D2F3612BB330E300A3D046 /* General.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = General.xctestplan; sourceTree = "<group>"; };
+		11D83E2C2BB3408B00B1ED53 /* ScreenShots.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScreenShots.xctestplan; sourceTree = "<group>"; };
 		11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chewy-Regular.ttf"; sourceTree = "<group>"; };
 		11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PirataOne-Regular.ttf"; sourceTree = "<group>"; };
 		11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Micro5-Regular.ttf"; sourceTree = "<group>"; };
@@ -117,6 +120,9 @@
 		113A43C62B581C9600A2EEB4 = {
 			isa = PBXGroup;
 			children = (
+				11D83E2C2BB3408B00B1ED53 /* ScreenShots.xctestplan */,
+				1192B4E52BB337AC00C376DC /* paris.gpx */,
+				11D2F3612BB330E300A3D046 /* General.xctestplan */,
 				113A43D12B581C9600A2EEB4 /* galere */,
 				113A43E22B581C9800A2EEB4 /* galereTests */,
 				113A43EC2B581C9800A2EEB4 /* galereUITests */,
