@@ -1,0 +1,52 @@
+{
+  "configurations" : [
+    {
+      "id" : "2FCDEB25-CE3F-4E71-A9DF-6DA435188B5E",
+      "name" : "English, US region in SF",
+      "options" : {
+        "areLocalizationScreenshotsEnabled" : true,
+        "language" : "en",
+        "locationScenario" : {
+          "identifier" : "San Francisco, CA, USA",
+          "referenceType" : "built-in"
+        },
+        "region" : "US",
+        "targetForVariableExpansion" : {
+          "containerPath" : "container:galere.xcodeproj",
+          "identifier" : "113A43CE2B581C9600A2EEB4",
+          "name" : "galere"
+        }
+      }
+    },
+    {
+      "id" : "354BCD7A-B771-4A0F-887F-45E526871E60",
+      "name" : "French, French region in Paris",
+      "options" : {
+        "areLocalizationScreenshotsEnabled" : true,
+        "language" : "fr",
+        "locationScenario" : {
+          "identifier" : "..\/..\/paris.gpx"
+        },
+        "region" : "FR",
+        "targetForVariableExpansion" : {
+          "containerPath" : "container:galere.xcodeproj",
+          "identifier" : "113A43CE2B581C9600A2EEB4",
+          "name" : "galere"
+        }
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:galere.xcodeproj",
+        "identifier" : "113A43DE2B581C9800A2EEB4",
+        "name" : "galereTests"
+      }
+    }
+  ],
+  "version" : 1
+}
