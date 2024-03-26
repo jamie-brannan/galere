@@ -1,43 +1,34 @@
 {
   "configurations" : [
     {
-      "id" : "2FCDEB25-CE3F-4E71-A9DF-6DA435188B5E",
+      "id" : "4318F392-13A7-4797-8434-A528BF647527",
       "name" : "English, US region in SF",
       "options" : {
-        "areLocalizationScreenshotsEnabled" : true,
         "language" : "en",
         "locationScenario" : {
           "identifier" : "San Francisco, CA, USA",
           "referenceType" : "built-in"
         },
-        "region" : "US",
-        "targetForVariableExpansion" : {
-          "containerPath" : "container:galere.xcodeproj",
-          "identifier" : "113A43CE2B581C9600A2EEB4",
-          "name" : "galere"
-        }
+        "region" : "US"
       }
     },
     {
-      "id" : "354BCD7A-B771-4A0F-887F-45E526871E60",
+      "id" : "3A0E75FE-825A-4F50-8103-6BAE97C6B5FC",
       "name" : "French, French region in Paris",
       "options" : {
-        "areLocalizationScreenshotsEnabled" : true,
         "language" : "fr",
         "locationScenario" : {
           "identifier" : "..\/..\/paris.gpx"
         },
-        "region" : "FR",
-        "targetForVariableExpansion" : {
-          "containerPath" : "container:galere.xcodeproj",
-          "identifier" : "113A43CE2B581C9600A2EEB4",
-          "name" : "galere"
-        }
+        "region" : "FR"
       }
     }
   ],
   "defaultOptions" : {
-    "testTimeoutsEnabled" : true
+    "areLocalizationScreenshotsEnabled" : true,
+    "preferredScreenCaptureFormat" : "screenshot",
+    "testTimeoutsEnabled" : true,
+    "uiTestingScreenshotsLifetime" : "keepAlways"
   },
   "testTargets" : [
     {
@@ -45,6 +36,13 @@
         "containerPath" : "container:galere.xcodeproj",
         "identifier" : "113A43DE2B581C9800A2EEB4",
         "name" : "galereTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:galere.xcodeproj",
+        "identifier" : "113A43E82B581C9800A2EEB4",
+        "name" : "galereUITests"
       }
     }
   ],
