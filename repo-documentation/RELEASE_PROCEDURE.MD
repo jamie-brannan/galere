@@ -8,7 +8,7 @@ Releasing requires:
 
 1. Create this pull request (PR) of `develop` pointing to `main` if this has not already been done
 2. **Next**, `git pull` the `develop` branch `origin` to ensure the commits of the corresponding version number release milestone issue.
-3. **Update** the build number in Xcode (use `bin/generate_build_number.sh`)
+3. **Update** the build number in Xcode (use `bin/generate_build_number.sh`) and to the `CHANGELOG.MD`
 4. **Update** the version number in Xcode (⚠ Watch out for differences between "marketing" version and current version numbers)
 5. **Update** the `README.md` with the specified version number
 6. Ensure all unit tests run locally. If more than a simple quick fix is required, make a new issue.
