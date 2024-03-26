@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 Build no. ``
 
 ### Added
+- 48: Fill out string catalogue in current languages
 
 ### Fixed
 - 38: Write unit tests
