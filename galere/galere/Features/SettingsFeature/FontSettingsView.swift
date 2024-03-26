@@ -30,89 +30,43 @@ struct FontSettingsView: View {
 
   // TODO: Extract views to simplify body
   var body: some View {
-      VStack(alignment: .leading, spacing: 16) {
+    VStack(alignment: .leading, spacing: 16) {
 
-        // MARK: - Editable Preview
-        PairingDisplayView(
-          displayStyle: displayStyle,
-          fontSelection: $fontSelection,
-          sizeSelection: $sizeSelection
-        )
-        .padding()
+      // MARK: - Editable Preview
+      PairingDisplayView(
+        displayStyle: displayStyle,
+        fontSelection: $fontSelection,
+        sizeSelection: $sizeSelection
+      )
+      .padding()
 
-        Divider()
+      Divider()
 
-        // MARK: - Fields
-        ScrollView(.vertical) {
-          VStack(alignment: .leading, spacing: 16) {
+      // MARK: - Fields
+      ScrollView(.vertical) {
+        VStack(alignment: .leading, spacing: 16) {
 
-            Text("Headers")
-              .font(.title2)
-              .bold()
+          Text("Headers")
+            .font(.title2)
+            .bold()
 
-            VStack(alignment: .leading) {
-              Text(
-                String(localized: "Font Family", comment: "Field name for the font file selector")
-              )
-              FieldDescriptorView(
-                description: "Pick font file that'll be visible in all your titles",
-                field: {
-                  Picker("Font Selection", selection: $fontSelection) {
-                    ForEach(Font.CustomFonts.allCases, id: \.self) { font in
-                      Text(font.rawValue).tag(font)
-                    }
-                  }
-                  .onChange(of: fontSelection) { selection in
-                    settingsStore.settings.font = selection
-                  }
-                  .padding()
-                  .overlay(
-                    RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
-                      .strokeBorder()
-                      .foregroundColor(.gray)
-                  )
-                }
-              )
-            }
+          VStack(alignment: .leading) {
+
+            Text(
+              String(localized: "Font Family", comment: "Field name for the font file selector")
+            )
 
             FieldDescriptorView(
-              description: String(
-                localized: "Set your relative size for the font, DynamicType's `.title` will handle the rest of scaling changes if you adjust your system settings in the meantime",
-                comment: "Field description for font size"
-              ),
+              description: "Pick font file that'll be visible in all your titles",
               field: {
-                VStack {
-                  Slider(
-                    value: $sizeSelection, 
-                    in: minimumSize...maximumSize,
-                    step: 1,
-                    label: {},
-                    minimumValueLabel: {
-                      Text(
-                        String(
-                          localized: "\(minimumSize.formatted())",
-                          comment: "The minimum numerical value for display fonts slider"
-                        )
-                      )
-                    },
-                    maximumValueLabel: {
-                      Text(
-                        String(
-                          localized: "\(maximumSize.formatted())",
-                          comment: "The maximumSize numerical value for display fonts slider"
-                        )
-                      )
-                    },
-                    onEditingChanged: { editing in
-                      isEditing = editing
-                    }
-                  )
-                  .accentColor( isEditing ? .pink : .blue)
-                  .onChange(of: sizeSelection) { selection in
-                    settingsStore.settings.size = selection
+
+                Picker("Font Selection", selection: $fontSelection) {
+                  ForEach(Font.CustomFonts.allCases, id: \.self) { font in
+                    Text(font.rawValue).tag(font)
                   }
-                  Text("\(sizeSelection.formatted())")
-                    .accentColor( isEditing ? .pink : .primary)
+                }
+                .onChange(of: fontSelection) { selection in
+                  settingsStore.settings.font = selection
                 }
                 .padding()
                 .overlay(
@@ -122,27 +76,86 @@ struct FontSettingsView: View {
                 )
               }
             )
-            Divider()
+          }
 
-            Text("Body")
-              .font(.title2)
-              .bold()
-            Text("""
+          FieldDescriptorView(
+            description: String(
+              localized: "Set your relative size for the font, DynamicType's `.title` will handle the rest of scaling changes if you adjust your system settings in the meantime",
+              comment: "Field description for font size"
+            ),
+            field: {
+
+              VStack {
+
+                Slider(
+                  value: $sizeSelection,
+                  in: minimumSize...maximumSize,
+                  step: 1,
+                  label: {},
+                  minimumValueLabel: {
+
+                    Text(
+
+                      String(
+                        localized: "\(minimumSize.formatted())",
+                        comment: "The minimum numerical value for display fonts slider"
+                      )
+                    )
+                  },
+
+                  maximumValueLabel: {
+                    Text(
+                      String(
+                        localized: "\(maximumSize.formatted())",
+                        comment: "The maximumSize numerical value for display fonts slider"
+                      )
+                    )
+                  },
+                  onEditingChanged: { editing in
+                    isEditing = editing
+                  }
+                )
+                .accentColor( isEditing ? .pink : .blue)
+                .onChange(of: sizeSelection) { selection in
+                  settingsStore.settings.size = selection
+                }
+
+                Text("\(sizeSelection.formatted())")
+                  .accentColor( isEditing ? .pink : .primary)
+
+              }
+              .padding()
+              .overlay(
+                RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
+                  .strokeBorder()
+                  .foregroundColor(.gray)
+              )
+            }
+          )
+
+          Divider()
+
+          Text("Body")
+            .font(.title2)
+            .bold()
+
+          Text("""
 This is fixed by default to Apple's `.body` text. For more information consult Apple's Human Interface Guidelines and Apple technical documentation. \n\nAdditionally, there's the possibility to adjust your system base font size settings by going to the `System` app >
 """) // TODO: Finish string
-          }
-          .padding()
-        }
 
-        Spacer()
+        }
+        .padding()
       }
-      .navigationTitle("Font Settings")
-      .navigationBarTitleDisplayMode(.large)
-      .onAppear(perform: {
-        fontSelection = settingsStore.settings.font
-        sizeSelection = settingsStore.settings.size
-      })
+      
+      Spacer()
     }
+    .navigationTitle("Font Settings")
+    .navigationBarTitleDisplayMode(.large)
+    .onAppear(perform: {
+      fontSelection = settingsStore.settings.font
+      sizeSelection = settingsStore.settings.size
+    })
+  }
 }
 
 #Preview("Font Settings View") {
