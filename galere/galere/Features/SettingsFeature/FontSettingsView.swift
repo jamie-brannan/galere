@@ -46,23 +46,28 @@ struct FontSettingsView: View {
       ScrollView(.vertical) {
         VStack(alignment: .leading, spacing: 16) {
 
-          Text("Headers")
+          // MARK: Headers
+          Text(
+            String(localized: "Headers", comment: "Section title for header fonts")
+          )
             .font(.title2)
             .bold()
 
           VStack(alignment: .leading) {
 
             Text(
-              String(localized: "Font Family", comment: "Field name for the font file selector")
+              String(localized: "Font Family", comment: "Field name label for the font file selector")
             )
 
             FieldDescriptorView(
-              description: "Pick font file that'll be visible in all your titles",
+              description: String(localized: "Pick font file that'll be visible in all your titles", comment: "Description of field for chosing font file for the application's"),
               field: {
 
-                Picker("Font Selection", selection: $fontSelection) {
-                  ForEach(Font.CustomFonts.allCases, id: \.self) { font in
-                    Text(font.rawValue).tag(font)
+                Picker(
+                  String(localized: "Font selection", comment: "What's picked"),
+                  selection: $fontSelection) {
+                    ForEach(Font.CustomFonts.allCases, id: \.self) { font in
+                      Text(font.rawValue).tag(font)
                   }
                 }
                 .onChange(of: fontSelection) { selection in
@@ -78,10 +83,15 @@ struct FontSettingsView: View {
             )
           }
 
+          Text(
+            String(localized: "Font Size, \(sizeSelection.formatted())", comment: "Field name label for the font size selector")
+          )
+          .accentColor( isEditing ? .pink : .primary)
+
           FieldDescriptorView(
             description: String(
-              localized: "Set your relative size for the font, DynamicType's `.title` will handle the rest of scaling changes if you adjust your system settings in the meantime",
-              comment: "Field description for font size"
+              localized: "Set your relative size for the font",
+              comment: "Field description for header's font size"
             ),
             field: {
 
@@ -95,36 +105,25 @@ struct FontSettingsView: View {
                   minimumValueLabel: {
 
                     Text(
-
-                      String(
-                        localized: "\(minimumSize.formatted())",
-                        comment: "The minimum numerical value for display fonts slider"
-                      )
+                      String(localized: "\(minimumSize.formatted())", comment: "The minimum numerical value for display fonts slider")
                     )
                   },
 
                   maximumValueLabel: {
                     Text(
-                      String(
-                        localized: "\(maximumSize.formatted())",
-                        comment: "The maximumSize numerical value for display fonts slider"
-                      )
+                      String(localized: "\(maximumSize.formatted())", comment: "The maximumSize numerical value for display fonts slider")
                     )
                   },
                   onEditingChanged: { editing in
                     isEditing = editing
                   }
                 )
+                .padding()
                 .accentColor( isEditing ? .pink : .blue)
                 .onChange(of: sizeSelection) { selection in
                   settingsStore.settings.size = selection
                 }
-
-                Text("\(sizeSelection.formatted())")
-                  .accentColor( isEditing ? .pink : .primary)
-
               }
-              .padding()
               .overlay(
                 RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
                   .strokeBorder()
@@ -135,18 +134,20 @@ struct FontSettingsView: View {
 
           Divider()
 
-          Text("Body")
+          // MARK: Body
+          Text(
+            String(localized: "Body", comment: "Section title for body text settings")
+          )
             .font(.title2)
             .bold()
 
-          Text("""
-This is fixed by default to Apple's `.body` text. For more information consult Apple's Human Interface Guidelines and Apple technical documentation. \n\nAdditionally, there's the possibility to adjust your system base font size settings by going to the `System` app >
-""") // TODO: Finish string
-
+          Text(
+            String(localized: "Adjust your body font size settings by going to your system's **Settings** app > `General` > `Display & Brightness` > `Text Size`", comment: "Description of what to do to manage body text")
+          )
         }
         .padding()
       }
-      
+
       Spacer()
     }
     .navigationTitle("Font Settings")
@@ -181,12 +182,12 @@ struct PairingDisplayView: View {
     VStack(alignment: .leading) {
       Group {
         TextField(
-          "display",
+          "Display sample text",
           text: $displaySample
         )
         .font(font)
         TextField(
-          "body",
+          "Body sample text",
           text: $bodySample
         )
         .font(.body)
