@@ -57,7 +57,7 @@ struct FontSettingsView: View {
               FieldDescriptorView(
                 description: "Pick font file that'll be visible in all your titles",
                 field: {
-                  Picker("fontSelection", selection: $fontSelection) {
+                  Picker("Font Selection", selection: $fontSelection) {
                     ForEach(Font.CustomFonts.allCases, id: \.self) { font in
                       Text(font.rawValue).tag(font)
                     }
