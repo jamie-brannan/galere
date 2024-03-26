@@ -12,7 +12,17 @@ final class JsonManagerTests: XCTestCase {
   /// Do note that the simulator this has run on needs to have already had an interaction that creates a user Default for this to succeed.
   /// In other words, unit tests cannot be run on a completely fresh simulator. Best to be the simulator some functional testing and development work has been run on.
   func testIsAlreadyALocalFile() {
-    XCTAssertEqual(JsonManager.isAlreadyALocalFile(named: "MySettings"), true)
+    let fileName = "MySettings"
+    let settingsUrlRaw = URL(
+      fileURLWithPath: fileName,
+      relativeTo: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+    ).appendingPathExtension("json")
+    /// Has this simulator already set settings or not?
+    if FileManager.default.fileExists(atPath: settingsUrlRaw.path) {
+      XCTAssertEqual(JsonManager.isAlreadyALocalFile(named: fileName), true)
+    } else {
+      XCTAssertEqual(JsonManager.isAlreadyALocalFile(named: fileName), false)
+    }
     /// These json files fail because they're in the app bundle, not the `FileManager.documentsDirectoryURL`
     XCTAssertEqual(JsonManager.isAlreadyALocalFile(named: "test-json-manager"), false)
     XCTAssertEqual(JsonManager.isAlreadyALocalFile(named: "default"), false)
