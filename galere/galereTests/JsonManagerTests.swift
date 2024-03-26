@@ -37,4 +37,21 @@ final class JsonManagerTests: XCTestCase {
     XCTAssertTrue(loadedBackUp?.font == expected.font)
     XCTAssertTrue(loadedBackUp?.size == expected.size)
   }
+
+  func testWriteUserDefaultJson() {
+    let testSaveUrl = URL(
+      fileURLWithPath: "UnitTest",
+      relativeTo: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+    ).appendingPathExtension("json")
+    /// If there's already a test file, then this test automatically fails
+    guard !FileManager.default.fileExists(atPath: testSaveUrl.path) else {
+      return XCTFail("Something's happened here: perhaps the file 'UnitTest' was not deleted from the last unit test run. Try running on a different simulator")
+    }
+    /// This value is impossible to select from `FontSettingsView` slider limits and not in `default.json` therefore should be unique to this test
+    let myTestValue = Settings(font: .micro, size: 1)
+    JsonManager.writeUserDefaultJson(inFileNamed: "UnitTest", withValues: myTestValue)
+    XCTAssertTrue(FileManager.default.fileExists(atPath: testSaveUrl.path))
+    /// Clean up after result of assertion for next time
+    try? FileManager.default.removeItem(atPath: testSaveUrl.path)
+  }
 }
