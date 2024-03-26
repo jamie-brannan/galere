@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 Build no. ``
 
 ### Added
+- 44: xctestplan to automate different localisation screenshots
 - 48: Fill out string catalogue in current languages
 
 ### Fixed
