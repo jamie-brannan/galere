@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		113010DE2BB1E39A00CDBB93 /* JsonManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113010DD2BB1E39A00CDBB93 /* JsonManagerTests.swift */; };
+		113010E02BB2EEED00CDBB93 /* FileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113010DF2BB2EEED00CDBB93 /* FileManagerTests.swift */; };
 		113A43D32B581C9600A2EEB4 /* GalereApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43D22B581C9600A2EEB4 /* GalereApp.swift */; };
 		113A43D52B581C9600A2EEB4 /* HomeLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43D42B581C9600A2EEB4 /* HomeLandingView.swift */; };
 		113A43D72B581C9800A2EEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113A43D62B581C9800A2EEB4 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		113010DD2BB1E39A00CDBB93 /* JsonManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonManagerTests.swift; sourceTree = "<group>"; };
+		113010DF2BB2EEED00CDBB93 /* FileManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerTests.swift; sourceTree = "<group>"; };
 		113A43CF2B581C9600A2EEB4 /* galere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = galere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		113A43D22B581C9600A2EEB4 /* GalereApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalereApp.swift; sourceTree = "<group>"; };
 		113A43D42B581C9600A2EEB4 /* HomeLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLandingView.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				113010DD2BB1E39A00CDBB93 /* JsonManagerTests.swift */,
 				113A43E32B581C9800A2EEB4 /* galereTests.swift */,
+				113010DF2BB2EEED00CDBB93 /* FileManagerTests.swift */,
 			);
 			path = galereTests;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			files = (
 				113A43E42B581C9800A2EEB4 /* galereTests.swift in Sources */,
 				113010DE2BB1E39A00CDBB93 /* JsonManagerTests.swift in Sources */,
+				113010E02BB2EEED00CDBB93 /* FileManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
