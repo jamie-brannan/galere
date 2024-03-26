@@ -2,7 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.2
+
+Build no. ``
+
+### Added
+
+### Fixed
+- 38: Write unit tests
+
 ## 0.0.1
+
+Build no. `1711382923`
 
 - 24: Start docc for base
 - 23: Make a changelog and intermediary release procedure
