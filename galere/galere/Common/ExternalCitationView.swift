@@ -7,10 +7,44 @@
 
 import SwiftUI
 
+struct ExternalLinkView: View {
+  let source: ExternalLink
+
+  var body: some View {
+    Label(
+      title: {
+        VStack(alignment: .leading) {
+          Text(source.displayName).bold()
+          if let description = source.description {
+            Text(description)
+              .font(.caption)
+          }
+        }
+      },
+      icon: {
+        Image(systemName: source.iconName)
+      }
+    )
+  }
+}
+
+#Preview("External Link View") {
+  ExternalLinkView(
+    source: ExternalLink(
+      iconName: "link",
+      displayName: "Apple Developer",
+      description: "Catalogue of developer info yo, get on it!",
+      weblink: URL(string: "https://developer.apple.com")!
+    )
+  )
+}
+
 struct ExternalCitationView: View {
+  let source: SourceCited
+
     var body: some View {
       VStack(alignment: .leading) {
-        
+
         HStack(alignment: .firstTextBaseline) {
           Text("Google Fonts")
             .font(.title3)
@@ -20,10 +54,10 @@ struct ExternalCitationView: View {
             .font(.caption)
         }
         .padding(.bottom)
-        
+
         Text("Where did you get this nice typography round here?")
           .font(.body)
-        
+
         Label(
           title: {
             Text("This is the link here").bold()
@@ -43,5 +77,19 @@ struct ExternalCitationView: View {
 }
 
 #Preview("External Citation View") {
-    ExternalCitationView()
+    ExternalCitationView(
+      source: SourceCited(
+        name: "Google Fonts",
+        category: "App-wide Content Source",
+        description: "Where did you get this nice typography round here?",
+        links: [
+          ExternalLink(
+            iconName: "link",
+            displayName: "Apple Developer",
+            description: "Catalogue of developer info yo, get on it!",
+            weblink: URL(string: "https://developer.apple.com")!
+          )
+        ]
+      )
+    )
 }
