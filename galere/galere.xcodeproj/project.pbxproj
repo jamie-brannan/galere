@@ -22,6 +22,7 @@
 		11599F652BB4396C00E88CF8 /* ExternalLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11599F642BB4396C00E88CF8 /* ExternalLink.swift */; };
 		11599F672BB4414C00E88CF8 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11599F662BB4414C00E88CF8 /* MainMenuView.swift */; };
 		11599F692BB4491000E88CF8 /* SourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11599F682BB4491000E88CF8 /* SourcesView.swift */; };
+		11599F6B2BB44E0000E88CF8 /* CitationBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11599F6A2BB44E0000E88CF8 /* CitationBackgroundModifier.swift */; };
 		117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */; };
 		1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914D2BA8B25C00132382 /* FontSettingsView.swift */; };
 		117691502BA8B45100132382 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914F2BA8B45100132382 /* SettingsStore.swift */; };
@@ -82,6 +83,7 @@
 		11599F642BB4396C00E88CF8 /* ExternalLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalLink.swift; sourceTree = "<group>"; };
 		11599F662BB4414C00E88CF8 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		11599F682BB4491000E88CF8 /* SourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesView.swift; sourceTree = "<group>"; };
+		11599F6A2BB44E0000E88CF8 /* CitationBackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitationBackgroundModifier.swift; sourceTree = "<group>"; };
 		117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldDescriptorView.swift; sourceTree = "<group>"; };
 		1176914D2BA8B25C00132382 /* FontSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSettingsView.swift; sourceTree = "<group>"; };
 		1176914F2BA8B45100132382 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
@@ -195,11 +197,20 @@
 			path = galereUITests;
 			sourceTree = "<group>";
 		};
+		11599F6C2BB44E0400E88CF8 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				11599F6A2BB44E0000E88CF8 /* CitationBackgroundModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		117140B72B97A39F00D46FB5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */,
 				11599F602BB4355900E88CF8 /* ExternalCitationView.swift */,
+				11599F6C2BB44E0400E88CF8 /* Modifiers */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -447,6 +458,7 @@
 				11599F692BB4491000E88CF8 /* SourcesView.swift in Sources */,
 				117691522BA8E25E00132382 /* FileManagerExtensions.swift in Sources */,
 				1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */,
+				11599F6B2BB44E0000E88CF8 /* CitationBackgroundModifier.swift in Sources */,
 				11599F612BB4355900E88CF8 /* ExternalCitationView.swift in Sources */,
 				113A43D32B581C9600A2EEB4 /* GalereApp.swift in Sources */,
 			);
