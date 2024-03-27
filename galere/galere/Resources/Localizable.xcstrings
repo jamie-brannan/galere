@@ -26,6 +26,9 @@
     "App-wide Content Source" : {
 
     },
+    "Assets" : {
+
+    },
     "Body" : {
       "comment" : "Section title for body text settings",
       "localizations" : {
@@ -154,6 +157,9 @@
         }
       }
     },
+    "Programming Best Practices" : {
+
+    },
     "Set your relative size for the font" : {
       "comment" : "Field description for header's font size",
       "localizations" : {
@@ -174,6 +180,9 @@
           }
         }
       }
+    },
+    "Sources" : {
+
     },
     "We're in the same boat" : {
       "localizations" : {

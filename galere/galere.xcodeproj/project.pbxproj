@@ -21,6 +21,7 @@
 		11599F632BB4391300E88CF8 /* SourceCited.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11599F622BB4391300E88CF8 /* SourceCited.swift */; };
 		11599F652BB4396C00E88CF8 /* ExternalLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11599F642BB4396C00E88CF8 /* ExternalLink.swift */; };
 		11599F672BB4414C00E88CF8 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11599F662BB4414C00E88CF8 /* MainMenuView.swift */; };
+		11599F692BB4491000E88CF8 /* SourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11599F682BB4491000E88CF8 /* SourcesView.swift */; };
 		117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */; };
 		1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914D2BA8B25C00132382 /* FontSettingsView.swift */; };
 		117691502BA8B45100132382 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914F2BA8B45100132382 /* SettingsStore.swift */; };
@@ -80,6 +81,7 @@
 		11599F622BB4391300E88CF8 /* SourceCited.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCited.swift; sourceTree = "<group>"; };
 		11599F642BB4396C00E88CF8 /* ExternalLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalLink.swift; sourceTree = "<group>"; };
 		11599F662BB4414C00E88CF8 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		11599F682BB4491000E88CF8 /* SourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesView.swift; sourceTree = "<group>"; };
 		117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldDescriptorView.swift; sourceTree = "<group>"; };
 		1176914D2BA8B25C00132382 /* FontSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSettingsView.swift; sourceTree = "<group>"; };
 		1176914F2BA8B45100132382 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				11599F662BB4414C00E88CF8 /* MainMenuView.swift */,
+				11599F682BB4491000E88CF8 /* SourcesView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				1190AA762B98B3580016E55D /* FontExtensions.swift in Sources */,
 				117691502BA8B45100132382 /* SettingsStore.swift in Sources */,
 				117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */,
+				11599F692BB4491000E88CF8 /* SourcesView.swift in Sources */,
 				117691522BA8E25E00132382 /* FileManagerExtensions.swift in Sources */,
 				1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */,
 				11599F612BB4355900E88CF8 /* ExternalCitationView.swift in Sources */,

@@ -19,7 +19,9 @@ struct MainMenuView: View {
           }
         }
         Section(header: Text("Other")) {
-          Text("Other")
+          NavigationLink(destination: SourcesView()) {
+            Label("Sources", systemImage: "lightbulb.max.fill")
+          }
         }
       }
     }
