@@ -7,10 +7,13 @@ All notable changes to this project will be documented in this file.
 Build no. ``
 
 ### Added
+- 31: Add Github pull request templates
 - 44: xctestplan to automate different localisation screenshots
 - 48: Fill out string catalogue in current languages
 
 ### Fixed
+- 34: Cite Google fonts
+- 30: Add Github issue templates
 - 38: Write unit tests
 
 ## 0.0.1
