@@ -83,6 +83,18 @@ struct ExternalCitationView: View {
             displayName: "Apple Developer",
             description: "Catalogue of developer info yo, get on it!",
             weblink: URL(string: "https://developer.apple.com")!
+          ),
+          ExternalLink(
+            iconName: "link",
+            displayName: "Apple Developer",
+            description: "Catalogue of developer info yo, get on it!",
+            weblink: URL(string: "https://developer.apple.com")!
+          ),
+          ExternalLink(
+            iconName: "link",
+            displayName: "Apple Developer",
+            description: "Catalogue of developer info yo, get on it!",
+            weblink: URL(string: "https://developer.apple.com")!
           )
         ]
       )
