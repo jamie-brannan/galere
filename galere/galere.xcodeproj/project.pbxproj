@@ -155,7 +155,7 @@
 				113A43D22B581C9600A2EEB4 /* GalereApp.swift */,
 				113A43D42B581C9600A2EEB4 /* HomeLandingView.swift */,
 				118CF98D2BA8AD6100096F65 /* Models */,
-				11F13FD72BAAF9A7008641B5 /* Features */,
+				11F13FD72BAAF9A7008641B5 /* Controllers */,
 				11820ED52BAB2FC8008BAA0F /* Services */,
 				117140B72B97A39F00D46FB5 /* Common */,
 				1190AA742B98B3460016E55D /* Extensions */,
@@ -207,7 +207,6 @@
 			children = (
 				1176914D2BA8B25C00132382 /* FontSettingsView.swift */,
 				1176914F2BA8B45100132382 /* SettingsStore.swift */,
-				11599F662BB4414C00E88CF8 /* MainMenuView.swift */,
 			);
 			path = SettingsFeature;
 			sourceTree = "<group>";
@@ -215,6 +214,7 @@
 		11820ED52BAB2FC8008BAA0F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1176914C2BA8B25C00132382 /* SettingsFeature */,
 				11820ED62BAB300D008BAA0F /* JsonManager.swift */,
 			);
 			path = Services;
@@ -254,12 +254,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		11F13FD72BAAF9A7008641B5 /* Features */ = {
+		11F13FD72BAAF9A7008641B5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1176914C2BA8B25C00132382 /* SettingsFeature */,
+				11599F662BB4414C00E88CF8 /* MainMenuView.swift */,
 			);
-			path = Features;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
