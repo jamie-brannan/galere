@@ -128,6 +128,9 @@
         }
       }
     },
+    "Hello, World!" : {
+
+    },
     "Pick font file that'll be visible in all your titles" : {
       "comment" : "Description of field for chosing font file for the application's",
       "localizations" : {

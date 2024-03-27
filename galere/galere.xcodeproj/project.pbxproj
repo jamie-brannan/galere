@@ -17,6 +17,7 @@
 		113A43EE2B581C9800A2EEB4 /* galereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43ED2B581C9800A2EEB4 /* galereUITests.swift */; };
 		113A43F02B581C9800A2EEB4 /* galereUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43EF2B581C9800A2EEB4 /* galereUITestsLaunchTests.swift */; };
 		114AC12D2BA9F220002B2FDC /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114AC12C2BA9F220002B2FDC /* LaunchScreen.swift */; };
+		11599F612BB4355900E88CF8 /* ExternalCitationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11599F602BB4355900E88CF8 /* ExternalCitationView.swift */; };
 		117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */; };
 		1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914D2BA8B25C00132382 /* FontSettingsView.swift */; };
 		117691502BA8B45100132382 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176914F2BA8B45100132382 /* SettingsStore.swift */; };
@@ -72,6 +73,7 @@
 		113A43ED2B581C9800A2EEB4 /* galereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galereUITests.swift; sourceTree = "<group>"; };
 		113A43EF2B581C9800A2EEB4 /* galereUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galereUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		114AC12C2BA9F220002B2FDC /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		11599F602BB4355900E88CF8 /* ExternalCitationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalCitationView.swift; sourceTree = "<group>"; };
 		117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldDescriptorView.swift; sourceTree = "<group>"; };
 		1176914D2BA8B25C00132382 /* FontSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSettingsView.swift; sourceTree = "<group>"; };
 		1176914F2BA8B45100132382 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */,
+				11599F602BB4355900E88CF8 /* ExternalCitationView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				117140B92B97A3BA00D46FB5 /* FieldDescriptorView.swift in Sources */,
 				117691522BA8E25E00132382 /* FileManagerExtensions.swift in Sources */,
 				1176914E2BA8B25C00132382 /* FontSettingsView.swift in Sources */,
+				11599F612BB4355900E88CF8 /* ExternalCitationView.swift in Sources */,
 				113A43D32B581C9600A2EEB4 /* GalereApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
