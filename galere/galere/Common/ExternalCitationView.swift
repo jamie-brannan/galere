@@ -88,9 +88,9 @@ struct ExternalCitationView: View {
         links: [
           ExternalLink(
             iconName: "link",
-            displayName: "Apple Developer",
+            displayName: "Hacking Swift",
             description: "Catalogue of developer info yo, get on it!",
-            weblink: URL(string: "https://developer.apple.com")!
+            weblink: URL(string: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-open-web-links-in-safari")!
           ),
           ExternalLink(
             iconName: "link",
@@ -100,7 +100,7 @@ struct ExternalCitationView: View {
           ),
           ExternalLink(
             iconName: "link",
-            displayName: "Apple Developer",
+            displayName: "Something Else",
             description: "Catalogue of developer info yo, get on it!",
             weblink: URL(string: "https://developer.apple.com")!
           )
