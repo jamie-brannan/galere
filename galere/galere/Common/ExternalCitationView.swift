@@ -8,23 +8,31 @@
 import SwiftUI
 
 struct ExternalLinkView: View {
+  @Environment(\.openURL) var openUrl
   let source: ExternalLink
 
   var body: some View {
-    Label(
-      title: {
-        VStack(alignment: .leading) {
-          Text(source.displayName)
-          if let description = source.description {
-            Text(description)
-              .font(.caption)
+    Button(
+      action: { openUrl( source.weblink) },
+      label: {
+        Label(
+          title: {
+            VStack(alignment: .leading) {
+              Text(source.displayName)
+              if let description = source.description {
+                Text(description)
+                  .font(.caption)
+              }
+            }
+          },
+          icon: {
+            Image(systemName: source.iconName)
+              .foregroundColor(.blue)
           }
-        }
-      },
-      icon: {
-        Image(systemName: source.iconName)
+        )
       }
     )
+    .foregroundColor(.primary)
   }
 }
 
