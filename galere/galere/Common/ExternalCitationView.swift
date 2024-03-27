@@ -14,7 +14,7 @@ struct ExternalLinkView: View {
     Label(
       title: {
         VStack(alignment: .leading) {
-          Text(source.displayName).bold()
+          Text(source.displayName)
           if let description = source.description {
             Text(description)
               .font(.caption)
@@ -58,15 +58,10 @@ struct ExternalCitationView: View {
         Text("Where did you get this nice typography round here?")
           .font(.body)
 
-        Label(
-          title: {
-            Text("This is the link here").bold()
-          },
-          icon: {
-            Image(systemName: "link")
-          }
-        )
-        .padding()
+        ForEach(source.links, id: \.self) { link in
+          ExternalLinkView(source: link)
+            .padding()
+        }
       }
       .padding()
       .background(
