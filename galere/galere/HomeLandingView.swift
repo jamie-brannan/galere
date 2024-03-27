@@ -26,8 +26,8 @@ struct HomeLandingView: View {
           .font(.settingsBased(settingsStore, style: .title))
       }
       .toolbar {
-        NavigationLink(destination: FontSettingsView(settingsStore: settingsStore)) {
-          Text("Settings")
+        NavigationLink(destination: MainMenuView(settingsStore: settingsStore)) {
+          Text("Menu")
         }
       }
       .padding()

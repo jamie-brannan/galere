@@ -23,6 +23,9 @@
         }
       }
     },
+    "App-wide Content Source" : {
+
+    },
     "Body" : {
       "comment" : "Section title for body text settings",
       "localizations" : {
@@ -107,6 +110,9 @@
         }
       }
     },
+    "Google Fonts" : {
+
+    },
     "Headers" : {
       "comment" : "Section title for header fonts",
       "localizations" : {
@@ -128,7 +134,13 @@
         }
       }
     },
-    "Hello, World!" : {
+    "Main Menu" : {
+
+    },
+    "Menu" : {
+
+    },
+    "Other" : {
 
     },
     "Pick font file that'll be visible in all your titles" : {
@@ -172,6 +184,9 @@
           }
         }
       }
+    },
+    "Where did you get this nice typography round here?" : {
+
     }
   },
   "version" : "1.0"
