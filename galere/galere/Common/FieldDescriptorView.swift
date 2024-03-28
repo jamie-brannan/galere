@@ -30,7 +30,7 @@ struct FieldDescriptorView<Content: View>: View {
     }
 }
 
-#Preview("Fake 'Favorite Song' Form") {
+#Preview("Fake 'Favorite Song' Field") {
   struct Preview: View {
     @State var temp: String = ""
     var body: some View {

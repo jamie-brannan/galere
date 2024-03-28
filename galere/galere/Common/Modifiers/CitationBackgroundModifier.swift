@@ -7,8 +7,9 @@
 
 import SwiftUI
 
+/// When citations appear outside of the `SourcesView`, they may need this background modifier
 struct CitationBackgroundModifier: ViewModifier {
-  
+
   func body(content: Content) -> some View {
     content
       .padding()

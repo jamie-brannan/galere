@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// When a link leads outside of the Galère App (web, deeplink)
 struct ExternalLinkView: View {
   @Environment(\.openURL) var openUrl
   let source: ExternalLink
