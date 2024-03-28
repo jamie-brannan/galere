@@ -14,7 +14,8 @@ struct ExternalLinkView: View {
 
   var body: some View {
     Button(
-      action: { openUrl( source.weblink) },
+      // TODO: Enable exception, check how this was handled else where in projects
+      action: { openUrl( source.weblink ?? URL(string: "www.google.com")!) },
       label: {
         Label(
           title: {
@@ -43,7 +44,7 @@ struct ExternalLinkView: View {
       iconName: "link",
       displayName: "Apple Developer",
       description: "Catalogue of developer info yo, get on it!",
-      weblink: URL(string: "https://developer.apple.com")!
+      weblink: URL(string: "https://developer.apple.com")
     )
   )
 }
@@ -86,19 +87,19 @@ struct ExternalCitationView: View {
             iconName: "link",
             displayName: "Hacking Swift",
             description: "Catalogue of developer info yo, get on it!",
-            weblink: URL(string: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-open-web-links-in-safari")!
+            weblink: URL(string: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-open-web-links-in-safari")
           ),
           ExternalLink(
             iconName: "link",
             displayName: "Apple Developer",
             description: "Catalogue of developer info yo, get on it!",
-            weblink: URL(string: "https://developer.apple.com")!
+            weblink: URL(string: "https://developer.apple.com")
           ),
           ExternalLink(
             iconName: "link",
             displayName: "Something Else",
             description: "Catalogue of developer info yo, get on it!",
-            weblink: URL(string: "https://developer.apple.com")!
+            weblink: URL(string: "https://developer.apple.com")
           )
         ]
       )

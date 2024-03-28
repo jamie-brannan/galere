@@ -11,5 +11,5 @@ struct ExternalLink: Hashable {
   let iconName: String
   let displayName: String
   var description: String?
-  let weblink: URL
+  let weblink: URL?
 }
