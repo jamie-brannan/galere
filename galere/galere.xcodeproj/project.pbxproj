@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113010DE2BB1E39A00CDBB93 /* JsonManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113010DD2BB1E39A00CDBB93 /* JsonManagerTests.swift */; };
+		113010E02BB2EEED00CDBB93 /* FileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113010DF2BB2EEED00CDBB93 /* FileManagerTests.swift */; };
 		113A43D32B581C9600A2EEB4 /* GalereApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43D22B581C9600A2EEB4 /* GalereApp.swift */; };
 		113A43D52B581C9600A2EEB4 /* HomeLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43D42B581C9600A2EEB4 /* HomeLandingView.swift */; };
 		113A43D72B581C9800A2EEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113A43D62B581C9800A2EEB4 /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113010DD2BB1E39A00CDBB93 /* JsonManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonManagerTests.swift; sourceTree = "<group>"; };
+		113010DF2BB2EEED00CDBB93 /* FileManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerTests.swift; sourceTree = "<group>"; };
 		113A43CF2B581C9600A2EEB4 /* galere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = galere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		113A43D22B581C9600A2EEB4 /* GalereApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalereApp.swift; sourceTree = "<group>"; };
 		113A43D42B581C9600A2EEB4 /* HomeLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLandingView.swift; sourceTree = "<group>"; };
@@ -77,6 +81,9 @@
 		118CF98B2BA8AC0700096F65 /* default.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
 		118CF98E2BA8ADE800096F65 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1190AA752B98B3580016E55D /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		1192B4E52BB337AC00C376DC /* paris.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = paris.gpx; sourceTree = "<group>"; };
+		11D2F3612BB330E300A3D046 /* General.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = General.xctestplan; sourceTree = "<group>"; };
+		11D83E2C2BB3408B00B1ED53 /* ScreenShots.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScreenShots.xctestplan; sourceTree = "<group>"; };
 		11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chewy-Regular.ttf"; sourceTree = "<group>"; };
 		11DB1ECF2B9B340700DD2A75 /* PirataOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PirataOne-Regular.ttf"; sourceTree = "<group>"; };
 		11DB1ED32B9B340700DD2A75 /* Micro5-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Micro5-Regular.ttf"; sourceTree = "<group>"; };
@@ -113,6 +120,9 @@
 		113A43C62B581C9600A2EEB4 = {
 			isa = PBXGroup;
 			children = (
+				11D83E2C2BB3408B00B1ED53 /* ScreenShots.xctestplan */,
+				1192B4E52BB337AC00C376DC /* paris.gpx */,
+				11D2F3612BB330E300A3D046 /* General.xctestplan */,
 				113A43D12B581C9600A2EEB4 /* galere */,
 				113A43E22B581C9800A2EEB4 /* galereTests */,
 				113A43EC2B581C9800A2EEB4 /* galereUITests */,
@@ -159,7 +169,9 @@
 		113A43E22B581C9800A2EEB4 /* galereTests */ = {
 			isa = PBXGroup;
 			children = (
+				113010DD2BB1E39A00CDBB93 /* JsonManagerTests.swift */,
 				113A43E32B581C9800A2EEB4 /* galereTests.swift */,
+				113010DF2BB2EEED00CDBB93 /* FileManagerTests.swift */,
 			);
 			path = galereTests;
 			sourceTree = "<group>";
@@ -425,6 +437,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				113A43E42B581C9800A2EEB4 /* galereTests.swift in Sources */,
+				113010DE2BB1E39A00CDBB93 /* JsonManagerTests.swift in Sources */,
+				113010E02BB2EEED00CDBB93 /* FileManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +501,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.0.1;
+				CURRENT_PROJECT_VERSION = 0.0.2;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -552,7 +566,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.0.1;
+				CURRENT_PROJECT_VERSION = 0.0.2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -582,7 +596,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1710278906;
+				CURRENT_PROJECT_VERSION = 1711382923;
 				DEVELOPMENT_ASSET_PATHS = "\"galere/Preview Content\"";
 				DEVELOPMENT_TEAM = 77Q9X4JZHN;
 				ENABLE_PREVIEWS = YES;
@@ -614,7 +628,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1710278906;
+				CURRENT_PROJECT_VERSION = 1711382923;
 				DEVELOPMENT_ASSET_PATHS = "\"galere/Preview Content\"";
 				DEVELOPMENT_TEAM = 77Q9X4JZHN;
 				ENABLE_PREVIEWS = YES;

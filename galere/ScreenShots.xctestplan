@@ -1,0 +1,50 @@
+{
+  "configurations" : [
+    {
+      "id" : "4318F392-13A7-4797-8434-A528BF647527",
+      "name" : "English, US region in SF",
+      "options" : {
+        "language" : "en",
+        "locationScenario" : {
+          "identifier" : "San Francisco, CA, USA",
+          "referenceType" : "built-in"
+        },
+        "region" : "US"
+      }
+    },
+    {
+      "id" : "3A0E75FE-825A-4F50-8103-6BAE97C6B5FC",
+      "name" : "French, French region in Paris",
+      "options" : {
+        "language" : "fr",
+        "locationScenario" : {
+          "identifier" : "..\/..\/paris.gpx"
+        },
+        "region" : "FR"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "areLocalizationScreenshotsEnabled" : true,
+    "preferredScreenCaptureFormat" : "screenshot",
+    "testTimeoutsEnabled" : true,
+    "uiTestingScreenshotsLifetime" : "keepAlways"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:galere.xcodeproj",
+        "identifier" : "113A43DE2B581C9800A2EEB4",
+        "name" : "galereTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:galere.xcodeproj",
+        "identifier" : "113A43E82B581C9800A2EEB4",
+        "name" : "galereUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
