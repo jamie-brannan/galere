@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct SourcesView: View {
-    var body: some View {
-      VStack(alignment: .leading) {
-        List {
-          Section(header: Text("Assets")) {
-            ExternalCitationView(source: fontSource)
-          }
-          Section(header: Text("Programming Best Practices")) {
-            Text("Other")
-          }
+  var body: some View {
+    VStack(alignment: .leading) {
+      List {
+        Section(header: Text("Assets")) {
+          ExternalCitationView(source: fontSource)
+        }
+        Section(header: Text("Programming Best Practices")) {
+          Text("Other")
         }
       }
     }
+  }
 }
 
 #Preview {
-    SourcesView()
+  SourcesView()
 }
