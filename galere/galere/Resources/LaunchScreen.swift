@@ -71,6 +71,12 @@ struct LaunchScreen: View {
   }
 }
 
-#Preview("Launch Screen Preview") {
+#Preview("Default, light") {
   LaunchScreen()
+}
+
+// TODO: Have a preview where the french scheme is forced?
+#Preview("French, dark") {
+  LaunchScreen()
+    .colorScheme(.dark)
 }
