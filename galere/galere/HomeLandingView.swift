@@ -20,17 +20,12 @@ struct HomeLandingView: View {
   var body: some View {
     NavigationView {
       VStack {
-        Image(systemName: "globe")
-          .imageScale(.large)
-          .foregroundColor(.accentColor)
-        Text("Hello, Galère!")
-          .font(.settingsBased(settingsStore, style: .title))
+        heroImageView
+        welcomeHeaderText
         TestDesignSystemConnection()
       }
       .toolbar {
-        NavigationLink(destination: MainMenuView(settingsStore: settingsStore)) {
-          Text("Menu")
-        }
+        menuButtonview
       }
       .padding()
       .task {
@@ -38,12 +33,24 @@ struct HomeLandingView: View {
       }
     }
   }
-}
 
-struct HomeLandingView_Previews: PreviewProvider {
-  static var previews: some View {
-    HomeLandingView(settingsStore: SettingsStore())
+  var heroImageView: some View {
+    Image(systemName: "globe")
+      .imageScale(.large)
+      .foregroundColor(.accentColor)
   }
+
+  var welcomeHeaderText: some View {
+    Text("Hello, Galère!")
+      .font(.settingsBased(settingsStore, style: .title))
+  }
+
+  var menuButtonview: some View {
+    NavigationLink(destination: MainMenuView(settingsStore: settingsStore)) {
+      Text("Menu")
+    }
+  }
+}
 
 @available(iOS 17.0, *)
 #Preview("Landing view", traits: .sizeThatFitsLayout) {
