@@ -33,6 +33,8 @@
 		118CF98C2BA8AC0700096F65 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = 118CF98B2BA8AC0700096F65 /* default.json */; };
 		118CF98F2BA8ADE800096F65 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CF98E2BA8ADE800096F65 /* Settings.swift */; };
 		1190AA762B98B3580016E55D /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190AA752B98B3580016E55D /* FontExtensions.swift */; };
+		11D217B52E7EBEEF0093959C /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D217B42E7EBEEF0093959C /* DesignSystem.framework */; };
+		11D217B62E7EBEEF0093959C /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11D217B42E7EBEEF0093959C /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11DB1ECA2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
 		11DB1ECB2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
 		11DB1ECC2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
@@ -65,6 +67,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		11D217B72E7EBEEF0093959C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11D217B62E7EBEEF0093959C /* DesignSystem.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		113010DD2BB1E39A00CDBB93 /* JsonManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonManagerTests.swift; sourceTree = "<group>"; };
 		113010DF2BB2EEED00CDBB93 /* FileManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerTests.swift; sourceTree = "<group>"; };
@@ -96,6 +112,7 @@
 		118CF98E2BA8ADE800096F65 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1190AA752B98B3580016E55D /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		1192B4E52BB337AC00C376DC /* paris.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = paris.gpx; sourceTree = "<group>"; };
+		11D217B42E7EBEEF0093959C /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D2F3612BB330E300A3D046 /* General.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = General.xctestplan; sourceTree = "<group>"; };
 		11D83E2C2BB3408B00B1ED53 /* ScreenShots.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScreenShots.xctestplan; sourceTree = "<group>"; };
 		11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chewy-Regular.ttf"; sourceTree = "<group>"; };
@@ -111,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D217B52E7EBEEF0093959C /* DesignSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +158,7 @@
 				113A43D12B581C9600A2EEB4 /* galere */,
 				113A43E22B581C9800A2EEB4 /* galereTests */,
 				113A43EC2B581C9800A2EEB4 /* galereUITests */,
+				11D217B32E7EBEEF0093959C /* Frameworks */,
 				113A43D02B581C9600A2EEB4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -254,6 +273,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		11D217B32E7EBEEF0093959C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11D217B42E7EBEEF0093959C /* DesignSystem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		11DB1EC82B9B336100DD2A75 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +317,7 @@
 				113A43CC2B581C9600A2EEB4 /* Frameworks */,
 				113A43CD2B581C9600A2EEB4 /* Resources */,
 				113E7E6D2BA1DCBC003A1F33 /* Linting with SwiftLint Homebrew */,
+				11D217B72E7EBEEF0093959C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DesignSystem
 
 /// The view that appears after ``LaunchScreen`` and is the central hub for the Galère gallery experience.
 struct HomeLandingView: View {
@@ -24,6 +25,7 @@ struct HomeLandingView: View {
           .foregroundColor(.accentColor)
         Text("Hello, Galère!")
           .font(.settingsBased(settingsStore, style: .title))
+        TestDesignSystemConnection()
       }
       .toolbar {
         NavigationLink(destination: MainMenuView(settingsStore: settingsStore)) {

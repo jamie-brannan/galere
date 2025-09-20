@@ -4,4 +4,7 @@
    <FileRef
       location = "group:galere.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:DesignSystem/DesignSystem.xcodeproj">
+   </FileRef>
 </Workspace>
