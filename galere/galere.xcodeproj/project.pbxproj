@@ -36,6 +36,7 @@
 		11D217B52E7EBEEF0093959C /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D217B42E7EBEEF0093959C /* DesignSystem.framework */; };
 		11D217B62E7EBEEF0093959C /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11D217B42E7EBEEF0093959C /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11D217B92E7ED7460093959C /* LaunchScreenStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D217B82E7ED7280093959C /* LaunchScreenStateManager.swift */; };
+		11D217BD2E7EDB880093959C /* ExternalLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D217BC2E7EDB760093959C /* ExternalLinkView.swift */; };
 		11DB1ECA2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
 		11DB1ECB2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
 		11DB1ECC2B9B33EE00DD2A75 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */; };
@@ -115,6 +116,7 @@
 		1192B4E52BB337AC00C376DC /* paris.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = paris.gpx; sourceTree = "<group>"; };
 		11D217B42E7EBEEF0093959C /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D217B82E7ED7280093959C /* LaunchScreenStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStateManager.swift; sourceTree = "<group>"; };
+		11D217BC2E7EDB760093959C /* ExternalLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalLinkView.swift; sourceTree = "<group>"; };
 		11D2F3612BB330E300A3D046 /* General.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = General.xctestplan; sourceTree = "<group>"; };
 		11D83E2C2BB3408B00B1ED53 /* ScreenShots.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScreenShots.xctestplan; sourceTree = "<group>"; };
 		11DB1EC92B9B33EE00DD2A75 /* Chewy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chewy-Regular.ttf"; sourceTree = "<group>"; };
@@ -231,8 +233,9 @@
 		117140B72B97A39F00D46FB5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				11D217BE2E7EDB930093959C /* Navigation */,
+				11D217BB2E7EDB640093959C /* Citation */,
 				117140B82B97A3BA00D46FB5 /* FieldDescriptorView.swift */,
-				11599F602BB4355900E88CF8 /* ExternalCitationView.swift */,
 				11599F6C2BB44E0400E88CF8 /* Modifiers */,
 			);
 			path = Common;
@@ -281,6 +284,22 @@
 				11D217B42E7EBEEF0093959C /* DesignSystem.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11D217BB2E7EDB640093959C /* Citation */ = {
+			isa = PBXGroup;
+			children = (
+				11599F602BB4355900E88CF8 /* ExternalCitationView.swift */,
+			);
+			path = Citation;
+			sourceTree = "<group>";
+		};
+		11D217BE2E7EDB930093959C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				11D217BC2E7EDB760093959C /* ExternalLinkView.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		11DB1EC82B9B336100DD2A75 /* Resources */ = {
@@ -479,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11599F632BB4391300E88CF8 /* SourceCited.swift in Sources */,
+				11D217BD2E7EDB880093959C /* ExternalLinkView.swift in Sources */,
 				113A43D52B581C9600A2EEB4 /* HomeLandingView.swift in Sources */,
 				11599F6E2BB591D700E88CF8 /* SourcesCited.swift in Sources */,
 				11820ED72BAB300D008BAA0F /* JsonManager.swift in Sources */,

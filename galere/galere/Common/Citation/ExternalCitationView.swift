@@ -7,52 +7,6 @@
 
 import SwiftUI
 
-/// When a link leads outside of the Galère App (web, deeplink)
-struct ExternalLinkView: View, Identifiable {
-  @Environment(\.openURL) var openUrl
-  let id = UUID()
-  let source: ExternalLink
-
-  var body: some View {
-    Button(
-      action: {
-        if let url = source.weblink {
-          openUrl(url)
-        }
-      },
-      label: {
-        Label(
-          title: {
-            VStack(alignment: .leading) {
-              Text(source.displayName)
-              if let description = source.description {
-                Text(description)
-                  .font(.caption)
-              }
-            }
-          },
-          icon: {
-            Image(systemName: source.iconName)
-              .foregroundColor(.blue)
-          }
-        )
-      }
-    )
-    .foregroundColor(.primary)
-  }
-}
-
-#Preview("External Link View") {
-  ExternalLinkView(
-    source: ExternalLink(
-      iconName: "link",
-      displayName: "Apple Developer",
-      description: "Catalogue of developer info yo, get on it!",
-      weblink: URL(string: "https://developer.apple.com")
-    )
-  )
-}
-
 struct ExternalCitationView: View {
   let source: SourceCited
 
