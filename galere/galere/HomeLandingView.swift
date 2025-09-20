@@ -5,8 +5,8 @@
 //  Created by Jamie Brannan on 18/11/2022.
 //
 
-import SwiftUI
 import DesignSystem
+import SwiftUI
 
 /// The view that appears after ``LaunchScreen`` and is the central hub for the Galère gallery experience.
 struct HomeLandingView: View {
