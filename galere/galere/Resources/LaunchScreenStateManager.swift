@@ -29,7 +29,8 @@ final class LaunchScreenStateManager: ObservableObject {
   // MARK: - Properties
 
 
-  let duration: Int = 6
+  // TODO: Extract magic number
+  let secondsToDismiss: Duration = Duration.seconds(6)
   @MainActor @Published private(set) var state: LaunchScreenStep = .start
 
   // MARK: - Action
@@ -38,7 +39,7 @@ final class LaunchScreenStateManager: ObservableObject {
   ///  The `Task` of taking the states through different time durations between the defined ``LaunchScreenStep``s
   @MainActor func dismiss() {
     Task {
-      try? await Task.sleep(for: Duration.seconds(duration))
+      try? await Task.sleep(for: secondsToDismiss)
       self.state = .finish
     }
   }
