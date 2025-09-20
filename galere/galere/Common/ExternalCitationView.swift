@@ -8,14 +8,18 @@
 import SwiftUI
 
 /// When a link leads outside of the Galère App (web, deeplink)
-struct ExternalLinkView: View {
+struct ExternalLinkView: View, Identifiable {
   @Environment(\.openURL) var openUrl
+  let id = UUID()
   let source: ExternalLink
 
   var body: some View {
     Button(
-      // TODO: Enable exception, check how this was handled else where in projects
-      action: { openUrl( source.weblink ?? URL(string: "www.google.com")!) },
+      action: {
+        if let url = source.weblink {
+          openUrl(url)
+        }
+      },
       label: {
         Label(
           title: {
@@ -56,19 +60,19 @@ struct ExternalCitationView: View {
       VStack(alignment: .leading) {
 
         HStack(alignment: .firstTextBaseline) {
-          Text("Google Fonts")
+          Text(source.name)
             .font(.title3)
             .bold()
           Spacer()
-          Text("App-wide Content Source")
+          Text(source.category)
             .font(.caption)
         }
         .padding(.bottom)
 
-        Text("Where did you get this nice typography round here?")
+        Text(source.description)
           .font(.body)
 
-        ForEach(source.links, id: \.self) { link in
+        ForEach(source.links, id: \.id) { link in
           ExternalLinkView(source: link)
             .padding()
         }

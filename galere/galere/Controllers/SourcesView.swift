@@ -12,7 +12,7 @@ struct SourcesView: View {
       VStack(alignment: .leading) {
         List {
           Section(header: Text("Assets")) {
-            Text("Other")
+            ExternalCitationView(source: fontSource)
           }
           Section(header: Text("Programming Best Practices")) {
             Text("Other")

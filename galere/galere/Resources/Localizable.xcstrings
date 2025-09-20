@@ -2,7 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     "%@" : {
-      "comment" : "The minimum numerical value for display fonts slider",
+      "comment" : "The maximumSize numerical value for display fonts slider\nThe minimum numerical value for display fonts slider",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -22,9 +22,6 @@
           }
         }
       }
-    },
-    "App-wide Content Source" : {
-
     },
     "Assets" : {
 
@@ -113,9 +110,6 @@
         }
       }
     },
-    "Google Fonts" : {
-
-    },
     "Headers" : {
       "comment" : "Section title for header fonts",
       "localizations" : {
@@ -193,9 +187,6 @@
           }
         }
       }
-    },
-    "Where did you get this nice typography round here?" : {
-
     }
   },
   "version" : "1.0"
