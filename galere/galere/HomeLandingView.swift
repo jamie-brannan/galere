@@ -44,4 +44,9 @@ struct HomeLandingView_Previews: PreviewProvider {
   static var previews: some View {
     HomeLandingView(settingsStore: SettingsStore())
   }
+
+@available(iOS 17.0, *)
+#Preview("Landing view", traits: .sizeThatFitsLayout) {
+  HomeLandingView(settingsStore: SettingsStore())
+    .environmentObject(LaunchScreenStateManager())
 }
