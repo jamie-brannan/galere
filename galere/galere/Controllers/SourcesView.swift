@@ -8,20 +8,50 @@
 import SwiftUI
 
 struct SourcesView: View {
+  // MARK: - Layout
+
   var body: some View {
     VStack(alignment: .leading) {
-      List {
-        Section(header: Text("Assets")) {
-          ExternalCitationView(source: fontSource)
-        }
-        Section(header: Text("Programming Best Practices")) {
-          Text("Other")
-        }
-      }
+      sourceListView
     }
+    .navigationTitle(Text("Sources Cited"))
+//    .navigationSubtitle("Version 1.0.0") // ???: Consider making an iOS 26 variant?
+  }
+
+  var sourceListView: some View {
+    List {
+      assetSectionView
+      bestPracticesSectionView
+    }
+  }
+
+  // MARK: - Sections
+
+  var assetSectionView: some View {
+    Section(header: assetSectionTileView) {
+      ExternalCitationView(source: fontSource)
+    }
+  }
+
+  var bestPracticesSectionView: some View {
+    Section(header: bestPracticesSectionTileView) {
+      Text("Other")
+    }
+  }
+
+  // MARK: - Child View
+
+  var assetSectionTileView: some View {
+    Text("Assets")
+  }
+
+  var bestPracticesSectionTileView: some View {
+    Text("Programming Best Practices")
   }
 }
 
 #Preview {
   SourcesView()
 }
+
+// TODO: Add french locale and dark mode previews
