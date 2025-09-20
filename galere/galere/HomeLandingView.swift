@@ -10,30 +10,48 @@ import SwiftUI
 
 /// The view that appears after ``LaunchScreen`` and is the central hub for the Galère gallery experience.
 struct HomeLandingView: View {
+  // MARK: - Properties
+
+  // MARK: Constants
+  let fontStyle: Font.TextStyle = .title
+  var menuDestination: MainMenuView {
+    MainMenuView(settingsStore: self.settingsStore)
+  }
+
+  // MARK: Data
+  // LOCAL
   @ObservedObject var settingsStore: SettingsStore
   @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
 
-  init(settingsStore: SettingsStore) {
+  // MARK: - Lifecycle
+  init(with settingsStore: SettingsStore) {
     self.settingsStore = settingsStore
   }
 
+  // MARK: - Layout
   var body: some View {
     NavigationView {
-      VStack {
-        heroImageView
-        welcomeHeaderText
-        TestDesignSystemConnection()
-      }
+      pageView
       .toolbar {
         menuButtonview
       }
       .padding()
       .task {
+        /// ???: Does this actually do anything?
         self.launchScreenState.dismiss()
       }
     }
   }
 
+  var pageView: some View {
+    VStack {
+      heroImageView
+      welcomeHeaderText
+      TestDesignSystemConnection()
+    }
+  }
+
+  // MARK: - Child views
   var heroImageView: some View {
     Image(systemName: "globe")
       .imageScale(.large)
@@ -42,11 +60,11 @@ struct HomeLandingView: View {
 
   var welcomeHeaderText: some View {
     Text("Hello, Galère!")
-      .font(.settingsBased(settingsStore, style: .title))
+      .font(.settingsBased(settingsStore, style: fontStyle))
   }
 
   var menuButtonview: some View {
-    NavigationLink(destination: MainMenuView(settingsStore: settingsStore)) {
+    NavigationLink(destination: menuDestination) {
       Text("Menu")
     }
   }
@@ -54,6 +72,6 @@ struct HomeLandingView: View {
 
 @available(iOS 17.0, *)
 #Preview("Landing view", traits: .sizeThatFitsLayout) {
-  HomeLandingView(settingsStore: SettingsStore())
+  HomeLandingView(with: SettingsStore())
     .environmentObject(LaunchScreenStateManager())
 }
