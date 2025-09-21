@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Because this project is build on open-source code, articles and knowledge-sharing of all kinds, the legal and right things to do is share these resources in a clear, tracable and organized manner.
 struct SourcesView: View {
   // MARK: - Layout
 
@@ -29,6 +30,7 @@ struct SourcesView: View {
 
   var assetSectionView: some View {
     Section(header: assetSectionTileView) {
+      // TODO: figure out an efficient and extendable/maintainable storage solution for this information
       ExternalCitationView(source: fontSource)
     }
   }
