@@ -15,7 +15,8 @@ struct GalereApp: App {
   var body: some Scene {
     WindowGroup {
       ZStack {
-        HomeLandingView(settingsStore: SettingsStore())
+        // ???: Shouldn't there just be one singleton of access to the store of the settings that's not necessarily injected into the view here?
+        HomeLandingView(with: SettingsStore())
         if launchScreenState.state != .finish {
           LaunchScreen()
         }
