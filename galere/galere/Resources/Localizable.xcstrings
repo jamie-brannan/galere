@@ -2,7 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     "%@" : {
-      "comment" : "The minimum numerical value for display fonts slider",
+      "comment" : "The maximumSize numerical value for display fonts slider\nThe minimum numerical value for display fonts slider",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -22,6 +22,9 @@
           }
         }
       }
+    },
+    "Assets" : {
+
     },
     "Body" : {
       "comment" : "Section title for body text settings",
@@ -128,6 +131,15 @@
         }
       }
     },
+    "Main Menu" : {
+
+    },
+    "Menu" : {
+
+    },
+    "Other" : {
+
+    },
     "Pick font file that'll be visible in all your titles" : {
       "comment" : "Description of field for chosing font file for the application's",
       "localizations" : {
@@ -138,6 +150,9 @@
           }
         }
       }
+    },
+    "Programming Best Practices" : {
+
     },
     "Set your relative size for the font" : {
       "comment" : "Field description for header's font size",
@@ -159,6 +174,9 @@
           }
         }
       }
+    },
+    "Sources" : {
+
     },
     "We're in the same boat" : {
       "localizations" : {
